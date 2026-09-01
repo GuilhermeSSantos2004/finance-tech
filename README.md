@@ -30,6 +30,12 @@ artifacts/                  saída local dos treinamentos, ignorada pelo Git
 .github/workflows/ci.yml    validação automática
 ```
 
+## Documentação técnica
+
+- [Como o algoritmo funciona](docs/ALGORITMO.md): arquitetura, features, modelo, limites e decisões técnicas.
+- [Contrato dos dados](docs/CONTRATO_DADOS.md): campos de treino e inferência, privacidade e prevenção de vazamento.
+- [Guia de testes](docs/TESTES.md): instalação, treinamento, inferência e interpretação das métricas.
+
 ## Preparação
 
 Requer Python 3.11 ou superior.
@@ -124,4 +130,3 @@ Os testes verificam:
 4. Calibrar probabilidades e limites de `REVIEW` usando dados reais de validação.
 5. Expor o classificador por uma API FastAPI depois de estabilizar o contrato de entrada.
 6. Monitorar mudança de distribuição, erros por CNAE e taxa de revisão manual.
-
