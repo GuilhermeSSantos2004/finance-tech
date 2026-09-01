@@ -1,0 +1,2751 @@
+{
+  "datasetMetadata": {
+    "name": "transacoes_mei_personal_sinteticas",
+    "version": "1.0.0",
+    "randomSeed": 20260901,
+    "recordCount": 30,
+    "classification": "PERSONAL",
+    "language": "pt-BR",
+    "currency": "BRL",
+    "synthetic": true,
+    "cnpjPolicy": "Numeros sinteticos com digitos verificadores validos. Nao representam movimentacoes de empresas reais.",
+    "privacyPolicy": "Contrapartes pessoa fisica usam tokens hash, nunca CPF real.",
+    "trainingNotice": "Dataset pequeno para prototipo e teste de pipeline; nao e suficiente isoladamente para producao.",
+    "recommendedGroupSplitKey": "accountId",
+    "featureExclusion": [
+      "id",
+      "accountId",
+      "order",
+      "createdAt",
+      "updatedAt",
+      "target",
+      "isSynthetic",
+      "paymentData.receiverReferenceId"
+    ]
+  },
+  "transactions": [
+    {
+      "id": "373b42c8-4bfb-523b-83e3-a63605647b67",
+      "description": "RSCSS CAFE EST 2508",
+      "descriptionRaw": "RSCSS CFEST T2 2508",
+      "currencyCode": "BRL",
+      "amount": -6.5,
+      "amountInAccountCurrency": -6.5,
+      "date": "2026-02-04T14:07:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "3545779a-d627-5d86-85fc-61ce5c70aaff",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO TINTA CERTA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100101000139"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "CAFE ESTACAO EXPRESS LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200027000122"
+        }
+      },
+      "providerId": null,
+      "order": 0,
+      "createdAt": "2026-02-04T15:07:00.000Z",
+      "updatedAt": "2026-02-04T15:07:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO TINTA CERTA",
+        "tradeName": "TINTA CERTA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100101000139"
+        },
+        "mainCnae": "4330-4/04",
+        "secondaryCnaes": [],
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      },
+      "counterpartyData": {
+        "normalizedName": "CAFE ESTACAO EXPRESS LTDA",
+        "bankAlias": "CFEST",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:37290d74ac4d186e3a8e5785"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 6.5,
+        "logAbsoluteAmount": 2.014903,
+        "direction": "DEBIT",
+        "localHour": 11,
+        "localWeekday": 2,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 9,
+        "counterpartyTransactions90d": 18,
+        "medianCounterpartyAmount90d": 7.5,
+        "amountRatioToMedian90d": 0.8667,
+        "sameAmountOccurrences90d": 3,
+        "estimatedCadenceDays": 4,
+        "recurrenceType": "FREQUENT"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "LOW_VALUE_PERSONAL_CONSUMPTION"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "f26f2c35-9370-5b50-b09a-33c7a03c0f33",
+      "description": "COMPRA DRG BEM",
+      "descriptionRaw": "PG*DRGBEM 0831 LJ14",
+      "currencyCode": "BRL",
+      "amount": -132.48,
+      "amountInAccountCurrency": -132.48,
+      "date": "2026-03-09T20:20:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Health",
+      "categoryId": "06000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "3545779a-d627-5d86-85fc-61ce5c70aaff",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO TINTA CERTA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100101000139"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "DROGARIA BEM ESTAR LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200028000177"
+        }
+      },
+      "providerId": null,
+      "order": 1,
+      "createdAt": "2026-03-09T22:20:00.000Z",
+      "updatedAt": "2026-03-09T22:20:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO TINTA CERTA",
+        "tradeName": "TINTA CERTA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100101000139"
+        },
+        "mainCnae": "4330-4/04",
+        "secondaryCnaes": [],
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      },
+      "counterpartyData": {
+        "normalizedName": "DROGARIA BEM ESTAR LTDA",
+        "bankAlias": "DRGBEM",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:20b04a4f018b89f369ce0092"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 132.48,
+        "logAbsoluteAmount": 4.893952,
+        "direction": "DEBIT",
+        "localHour": 17,
+        "localWeekday": 0,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 155.48,
+        "amountRatioToMedian90d": 0.8521,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_HEALTH_CATEGORY"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "ba6f2354-9362-554a-8d2c-f6e90713c9e8",
+      "description": "DEB AUTO STRMPLY",
+      "descriptionRaw": "DBAT STRMPLY BR 0826",
+      "currencyCode": "BRL",
+      "amount": -47.9,
+      "amountInAccountCurrency": -47.9,
+      "date": "2026-04-15T00:33:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Entertainment",
+      "categoryId": "05000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "3545779a-d627-5d86-85fc-61ce5c70aaff",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO TINTA CERTA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100101000139"
+          }
+        },
+        "paymentMethod": "AUTOMATIC_DEBIT",
+        "reason": null,
+        "receiver": {
+          "name": "STREAMPLAY ENTRETENIMENTO LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200029000111"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "DEBITO_AUTOMATICO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 2,
+      "createdAt": "2026-04-15T03:33:00.000Z",
+      "updatedAt": "2026-04-15T03:33:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO TINTA CERTA",
+        "tradeName": "TINTA CERTA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100101000139"
+        },
+        "mainCnae": "4330-4/04",
+        "secondaryCnaes": [],
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      },
+      "counterpartyData": {
+        "normalizedName": "STREAMPLAY ENTRETENIMENTO LTDA",
+        "bankAlias": "STRMPLY",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:dca83e717b1f64eb141057a7"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 47.9,
+        "logAbsoluteAmount": 3.889777,
+        "direction": "DEBIT",
+        "localHour": 21,
+        "localWeekday": 1,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 55.38,
+        "amountRatioToMedian90d": 0.8649,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 28,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_ENTERTAINMENT",
+          "MONTHLY_RECURRENCE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "1ed82f99-0031-5403-8795-8115cad53738",
+      "description": "COMPRA MRC FAM",
+      "descriptionRaw": "MRCFAM LJ03 178420 2408",
+      "currencyCode": "BRL",
+      "amount": -584.27,
+      "amountInAccountCurrency": -584.27,
+      "date": "2026-05-19T12:46:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Groceries",
+      "categoryId": "02000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "3545779a-d627-5d86-85fc-61ce5c70aaff",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO TINTA CERTA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100101000139"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "MERCADO FAMILIA LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200030000146"
+        }
+      },
+      "providerId": null,
+      "order": 3,
+      "createdAt": "2026-05-19T22:46:00.000Z",
+      "updatedAt": "2026-05-19T22:46:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO TINTA CERTA",
+        "tradeName": "TINTA CERTA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100101000139"
+        },
+        "mainCnae": "4330-4/04",
+        "secondaryCnaes": [],
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      },
+      "counterpartyData": {
+        "normalizedName": "MERCADO FAMILIA LTDA",
+        "bankAlias": "MRCFAM",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:e4d693d24e646cb787842622"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 584.27,
+        "logAbsoluteAmount": 6.372073,
+        "direction": "DEBIT",
+        "localHour": 9,
+        "localWeekday": 1,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 624.08,
+        "amountRatioToMedian90d": 0.9362,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 30,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_GROCERIES",
+          "CNAE_INCOMPATIBLE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "aa0a6bc2-3798-5829-82b5-152dc316f0c2",
+      "description": "PIX REC MSF",
+      "descriptionRaw": "PIXREC MSF 3008",
+      "currencyCode": "BRL",
+      "amount": 180,
+      "amountInAccountCurrency": 180,
+      "date": "2026-06-24T17:59:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Transfer",
+      "categoryId": "04000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "3545779a-d627-5d86-85fc-61ce5c70aaff",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "PESSOA SINTETICA FAMILIAR",
+          "documentNumber": {
+            "type": "CPF_HASH",
+            "value": "sha256:d34a569ab7aaa54dacd7"
+          }
+        },
+        "paymentMethod": "PIX",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO TINTA CERTA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100101000139"
+          }
+        },
+        "receiverReferenceId": "syn-ref-aa0a6bc2",
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "PIX",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 4,
+      "createdAt": "2026-06-25T07:59:00.000Z",
+      "updatedAt": "2026-06-25T07:59:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO TINTA CERTA",
+        "tradeName": "TINTA CERTA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100101000139"
+        },
+        "mainCnae": "4330-4/04",
+        "secondaryCnaes": [],
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      },
+      "counterpartyData": {
+        "normalizedName": "PESSOA SINTETICA FAMILIAR",
+        "bankAlias": "MSF",
+        "documentType": "CPF_HASH",
+        "identifierToken": "sha256:d34a569ab7aaa54dacd715ae"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 180,
+        "logAbsoluteAmount": 5.198497,
+        "direction": "CREDIT",
+        "localHour": 14,
+        "localWeekday": 2,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 177.63,
+        "amountRatioToMedian90d": 1.0133,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 27,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.88,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_TRANSFER_PATTERN"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "13d8d2b1-0e67-5487-892f-3cb8485f59f6",
+      "description": "ESTORNO PASSO LEVE",
+      "descriptionRaw": "EST CART PASSOLEVE 2108",
+      "currencyCode": "BRL",
+      "amount": 219.9,
+      "amountInAccountCurrency": 219.9,
+      "date": "2026-04-11T17:18:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "342403f1-c23e-58f5-89a4-50afdd01b03d",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "CALCADOS PASSO LEVE LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200031000190"
+          }
+        },
+        "paymentMethod": "CREDIT_CARD",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO SABOR DA ESQUINA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100102000183"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "ESTORNO_CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "CALCADOS PASSO LEVE LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200031000190"
+        }
+      },
+      "providerId": null,
+      "order": 5,
+      "createdAt": "2026-04-12T00:18:00.000Z",
+      "updatedAt": "2026-04-12T00:18:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO SABOR DA ESQUINA",
+        "tradeName": "SABOR DA ESQUINA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100102000183"
+        },
+        "mainCnae": "5611-2/03",
+        "secondaryCnaes": [],
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      },
+      "counterpartyData": {
+        "normalizedName": "CALCADOS PASSO LEVE LTDA",
+        "bankAlias": "PASSOLEVE",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:01ea5ddd3be5477ac3eae236"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 219.9,
+        "logAbsoluteAmount": 5.39771,
+        "direction": "CREDIT",
+        "localHour": 14,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 0,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 193.71,
+        "amountRatioToMedian90d": 1.1352,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_PURCHASE_REFUND"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "aea22a10-1494-547d-aea2-2d34bc457c7d",
+      "description": "PGTO ESC FUT 08",
+      "descriptionRaw": "BOL ESCFUT PARC08",
+      "currencyCode": "BRL",
+      "amount": -689,
+      "amountInAccountCurrency": -689,
+      "date": "2026-05-16T22:31:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Education",
+      "categoryId": "11000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "342403f1-c23e-58f5-89a4-50afdd01b03d",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO SABOR DA ESQUINA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100102000183"
+          }
+        },
+        "paymentMethod": "BOLETO",
+        "reason": null,
+        "receiver": {
+          "name": "ESCOLA FUTURO EDUCACIONAL LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200032000135"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "BOLETO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 6,
+      "createdAt": "2026-05-17T09:31:00.000Z",
+      "updatedAt": "2026-05-17T09:31:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO SABOR DA ESQUINA",
+        "tradeName": "SABOR DA ESQUINA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100102000183"
+        },
+        "mainCnae": "5611-2/03",
+        "secondaryCnaes": [],
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      },
+      "counterpartyData": {
+        "normalizedName": "ESCOLA FUTURO EDUCACIONAL LTDA",
+        "bankAlias": "ESCFUT",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:d64debd942d7dc26a8512315"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 689,
+        "logAbsoluteAmount": 6.536692,
+        "direction": "DEBIT",
+        "localHour": 19,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 683.01,
+        "amountRatioToMedian90d": 1.0088,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 29,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_EDUCATION",
+          "MONTHLY_RECURRENCE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "06a7a17a-9aa2-59f8-b58c-6a201ab511ce",
+      "description": "COMPRA PST ROTA",
+      "descriptionRaw": "PST ROTA ABT 1708",
+      "currencyCode": "BRL",
+      "amount": -105.64,
+      "amountInAccountCurrency": -105.64,
+      "date": "2026-06-21T10:44:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Transport",
+      "categoryId": "03000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "342403f1-c23e-58f5-89a4-50afdd01b03d",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO SABOR DA ESQUINA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100102000183"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "POSTO ROTA SUL LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200025000133"
+        }
+      },
+      "providerId": null,
+      "order": 7,
+      "createdAt": "2026-06-21T19:44:00.000Z",
+      "updatedAt": "2026-06-21T19:44:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO SABOR DA ESQUINA",
+        "tradeName": "SABOR DA ESQUINA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100102000183"
+        },
+        "mainCnae": "5611-2/03",
+        "secondaryCnaes": [],
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      },
+      "counterpartyData": {
+        "normalizedName": "POSTO ROTA SUL LTDA",
+        "bankAlias": "PST ROTA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:8ab3a42c3bdf33c33a633e9f"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 105.64,
+        "logAbsoluteAmount": 4.669459,
+        "direction": "DEBIT",
+        "localHour": 7,
+        "localWeekday": 6,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 0,
+        "counterpartyTransactions90d": 5,
+        "medianCounterpartyAmount90d": 118.42,
+        "amountRatioToMedian90d": 0.8921,
+        "sameAmountOccurrences90d": 3,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.84,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_TRANSPORT_PATTERN"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "6a09a4c5-c8e2-5978-8d95-42396b6f3622",
+      "description": "COMPRA REST PRACA",
+      "descriptionRaw": "RESTPRACA MESA18 1608",
+      "currencyCode": "BRL",
+      "amount": -146.7,
+      "amountInAccountCurrency": -146.7,
+      "date": "2026-07-26T14:57:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Groceries",
+      "categoryId": "02000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "342403f1-c23e-58f5-89a4-50afdd01b03d",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO SABOR DA ESQUINA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100102000183"
+          }
+        },
+        "paymentMethod": "CREDIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "RESTAURANTE DA PRACA LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200033000180"
+        }
+      },
+      "providerId": null,
+      "order": 8,
+      "createdAt": "2026-07-27T01:57:00.000Z",
+      "updatedAt": "2026-07-27T01:57:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO SABOR DA ESQUINA",
+        "tradeName": "SABOR DA ESQUINA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100102000183"
+        },
+        "mainCnae": "5611-2/03",
+        "secondaryCnaes": [],
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      },
+      "counterpartyData": {
+        "normalizedName": "RESTAURANTE DA PRACA LTDA",
+        "bankAlias": "RESTPRACA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:ee275d64dafcd283c25b00a6"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 146.7,
+        "logAbsoluteAmount": 4.995183,
+        "direction": "DEBIT",
+        "localHour": 11,
+        "localWeekday": 6,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 6,
+        "medianCounterpartyAmount90d": 165.12,
+        "amountRatioToMedian90d": 0.8884,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_DINING"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "58821413-a74e-5bb7-99a9-998db65424fa",
+      "description": "PGTO ENRG SUD",
+      "descriptionRaw": "CONV ENRGSUD UC00921",
+      "currencyCode": "BRL",
+      "amount": -224.38,
+      "amountInAccountCurrency": -224.38,
+      "date": "2026-08-07T20:10:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Home",
+      "categoryId": "01000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "342403f1-c23e-58f5-89a4-50afdd01b03d",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO SABOR DA ESQUINA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100102000183"
+          }
+        },
+        "paymentMethod": "BOLETO",
+        "reason": null,
+        "receiver": {
+          "name": "ENERGIA RESIDENCIAL SUDESTE SA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200034000124"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "BOLETO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 9,
+      "createdAt": "2026-08-08T07:10:00.000Z",
+      "updatedAt": "2026-08-08T07:10:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO SABOR DA ESQUINA",
+        "tradeName": "SABOR DA ESQUINA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100102000183"
+        },
+        "mainCnae": "5611-2/03",
+        "secondaryCnaes": [],
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      },
+      "counterpartyData": {
+        "normalizedName": "ENERGIA RESIDENCIAL SUDESTE SA",
+        "bankAlias": "ENRGSUD",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:381cfb6e1e428419d5d6b5d1"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 224.38,
+        "logAbsoluteAmount": 5.417788,
+        "direction": "DEBIT",
+        "localHour": 17,
+        "localWeekday": 4,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 254.17,
+        "amountRatioToMedian90d": 0.8828,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 33,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.87,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "RESIDENTIAL_UTILITY",
+          "MONTHLY_RECURRENCE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "8b2722de-d19b-532a-a110-db84e37dc0a9",
+      "description": "COMPRA COSM BELLA",
+      "descriptionRaw": "COSMBELLA LJ4 2108",
+      "currencyCode": "BRL",
+      "amount": -74.9,
+      "amountInAccountCurrency": -74.9,
+      "date": "2026-06-18T20:29:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "6828e266-a7af-58b1-8f02-3edc1316f2f0",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VITRINE URBANA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100103000128"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "COSMETICOS BELLA ATACADO LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200021000155"
+        }
+      },
+      "providerId": null,
+      "order": 10,
+      "createdAt": "2026-06-19T02:29:00.000Z",
+      "updatedAt": "2026-06-19T02:29:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VITRINE URBANA",
+        "tradeName": "VITRINE URBANA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100103000128"
+        },
+        "mainCnae": "4781-4/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      },
+      "counterpartyData": {
+        "normalizedName": "COSMETICOS BELLA ATACADO LTDA",
+        "bankAlias": "COSMBELLA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:4b62d138a858bbb5eb073b70"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 74.9,
+        "logAbsoluteAmount": 4.329417,
+        "direction": "DEBIT",
+        "localHour": 17,
+        "localWeekday": 3,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 87.2,
+        "amountRatioToMedian90d": 0.8589,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.83,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_CARE_PURCHASE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "4630d841-f35a-539f-b3f3-2da83f42a2f9",
+      "description": "DEB AUTO ACAD MOV",
+      "descriptionRaw": "ACADMOV PLANO 0826",
+      "currencyCode": "BRL",
+      "amount": -119.9,
+      "amountInAccountCurrency": -119.9,
+      "date": "2026-07-24T00:42:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Health",
+      "categoryId": "06000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "6828e266-a7af-58b1-8f02-3edc1316f2f0",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VITRINE URBANA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100103000128"
+          }
+        },
+        "paymentMethod": "AUTOMATIC_DEBIT",
+        "reason": null,
+        "receiver": {
+          "name": "ACADEMIA MOVIMENTO LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200035000179"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "DEBITO_AUTOMATICO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 11,
+      "createdAt": "2026-07-24T01:42:00.000Z",
+      "updatedAt": "2026-07-24T01:42:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VITRINE URBANA",
+        "tradeName": "VITRINE URBANA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100103000128"
+        },
+        "mainCnae": "4781-4/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      },
+      "counterpartyData": {
+        "normalizedName": "ACADEMIA MOVIMENTO LTDA",
+        "bankAlias": "ACADMOV",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:e326cff641fb950a5bdb458e"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 119.9,
+        "logAbsoluteAmount": 4.794964,
+        "direction": "DEBIT",
+        "localHour": 21,
+        "localWeekday": 3,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 130.51,
+        "amountRatioToMedian90d": 0.9187,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 32,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_WELLNESS",
+          "MONTHLY_RECURRENCE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "d61466af-91cc-50d6-ab3a-a89a81ab9a12",
+      "description": "DEB STRM PLAY",
+      "descriptionRaw": "STRMPLY*PREMIUM 2608",
+      "currencyCode": "BRL",
+      "amount": -62.9,
+      "amountInAccountCurrency": -62.9,
+      "date": "2026-08-04T12:55:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Entertainment",
+      "categoryId": "05000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "6828e266-a7af-58b1-8f02-3edc1316f2f0",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VITRINE URBANA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100103000128"
+          }
+        },
+        "paymentMethod": "CREDIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "STREAMPLAY ENTRETENIMENTO LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200029000111"
+        }
+      },
+      "providerId": null,
+      "order": 12,
+      "createdAt": "2026-08-05T08:55:00.000Z",
+      "updatedAt": "2026-08-05T08:55:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VITRINE URBANA",
+        "tradeName": "VITRINE URBANA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100103000128"
+        },
+        "mainCnae": "4781-4/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      },
+      "counterpartyData": {
+        "normalizedName": "STREAMPLAY ENTRETENIMENTO LTDA",
+        "bankAlias": "STRMPLY",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:dca83e717b1f64eb141057a7"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 62.9,
+        "logAbsoluteAmount": 4.157319,
+        "direction": "DEBIT",
+        "localHour": 9,
+        "localWeekday": 1,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 53.04,
+        "amountRatioToMedian90d": 1.1859,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 29,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_ENTERTAINMENT"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "e826d718-1e6e-5907-ba0e-c5804bd6f1fd",
+      "description": "COMPRA MERC FAM",
+      "descriptionRaw": "MRCFAM CXP09 2008",
+      "currencyCode": "BRL",
+      "amount": -427.65,
+      "amountInAccountCurrency": -427.65,
+      "date": "2026-02-09T17:08:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Groceries",
+      "categoryId": "02000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "6828e266-a7af-58b1-8f02-3edc1316f2f0",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VITRINE URBANA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100103000128"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "MERCADO FAMILIA LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200030000146"
+        }
+      },
+      "providerId": null,
+      "order": 13,
+      "createdAt": "2026-02-10T00:08:00.000Z",
+      "updatedAt": "2026-02-10T00:08:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VITRINE URBANA",
+        "tradeName": "VITRINE URBANA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100103000128"
+        },
+        "mainCnae": "4781-4/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      },
+      "counterpartyData": {
+        "normalizedName": "MERCADO FAMILIA LTDA",
+        "bankAlias": "MRCFAM",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:e4d693d24e646cb787842622"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 427.65,
+        "logAbsoluteAmount": 6.060641,
+        "direction": "DEBIT",
+        "localHour": 14,
+        "localWeekday": 0,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 434.11,
+        "amountRatioToMedian90d": 0.9851,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 31,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_GROCERIES"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "0d0aad00-0e78-5718-a4bb-48dd8eae5819",
+      "description": "PIX REC LMS",
+      "descriptionRaw": "PIXREC LMS 18AGO",
+      "currencyCode": "BRL",
+      "amount": 95,
+      "amountInAccountCurrency": 95,
+      "date": "2026-03-14T22:21:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Transfer",
+      "categoryId": "04000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "6828e266-a7af-58b1-8f02-3edc1316f2f0",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "PESSOA SINTETICA AMIGA",
+          "documentNumber": {
+            "type": "CPF_HASH",
+            "value": "sha256:cde48537ca2c28084ff5"
+          }
+        },
+        "paymentMethod": "PIX",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO VITRINE URBANA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100103000128"
+          }
+        },
+        "receiverReferenceId": "syn-ref-0d0aad00",
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "PIX",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 14,
+      "createdAt": "2026-03-15T05:21:00.000Z",
+      "updatedAt": "2026-03-15T05:21:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VITRINE URBANA",
+        "tradeName": "VITRINE URBANA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100103000128"
+        },
+        "mainCnae": "4781-4/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      },
+      "counterpartyData": {
+        "normalizedName": "PESSOA SINTETICA AMIGA",
+        "bankAlias": "LMS",
+        "documentType": "CPF_HASH",
+        "identifierToken": "sha256:cde48537ca2c28084ff56082"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 95,
+        "logAbsoluteAmount": 4.564348,
+        "direction": "CREDIT",
+        "localHour": 19,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 1,
+        "medianCounterpartyAmount90d": 96.93,
+        "amountRatioToMedian90d": 0.9801,
+        "sameAmountOccurrences90d": 1,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.82,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_TRANSFER_PATTERN"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "46b38579-4d97-5e0e-b396-c7e3114645f5",
+      "description": "DEB GAME HUB",
+      "descriptionRaw": "GAMEHUB*PASS 0826",
+      "currencyCode": "BRL",
+      "amount": -44.9,
+      "amountInAccountCurrency": -44.9,
+      "date": "2026-08-25T22:40:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Entertainment",
+      "categoryId": "05000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "674f992c-6765-5eb8-8a96-25c5cecbf72f",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO NUVEM CLARA TI",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100104000172"
+          }
+        },
+        "paymentMethod": "CREDIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "GAMEHUB SERVICOS DIGITAIS LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200036000113"
+        }
+      },
+      "providerId": null,
+      "order": 15,
+      "createdAt": "2026-08-26T01:40:00.000Z",
+      "updatedAt": "2026-08-26T01:40:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO NUVEM CLARA TI",
+        "tradeName": "NUVEM CLARA TI",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100104000172"
+        },
+        "mainCnae": "6209-1/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      },
+      "counterpartyData": {
+        "normalizedName": "GAMEHUB SERVICOS DIGITAIS LTDA",
+        "bankAlias": "GAMEHUB",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:cd7ac4c61fd8bd3e76fe77e0"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 44.9,
+        "logAbsoluteAmount": 3.826465,
+        "direction": "DEBIT",
+        "localHour": 19,
+        "localWeekday": 1,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 48.46,
+        "amountRatioToMedian90d": 0.9265,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 27,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_ENTERTAINMENT"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "df077089-e0ad-5e13-a4db-2c0144e1a1ef",
+      "description": "COMPRA CAFE EST",
+      "descriptionRaw": "CFEST T1 1908 08H",
+      "currencyCode": "BRL",
+      "amount": -11.8,
+      "amountInAccountCurrency": -11.8,
+      "date": "2026-02-06T10:53:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "674f992c-6765-5eb8-8a96-25c5cecbf72f",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO NUVEM CLARA TI",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100104000172"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "CAFE ESTACAO EXPRESS LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200027000122"
+        }
+      },
+      "providerId": null,
+      "order": 16,
+      "createdAt": "2026-02-07T00:53:00.000Z",
+      "updatedAt": "2026-02-07T00:53:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO NUVEM CLARA TI",
+        "tradeName": "NUVEM CLARA TI",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100104000172"
+        },
+        "mainCnae": "6209-1/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      },
+      "counterpartyData": {
+        "normalizedName": "CAFE ESTACAO EXPRESS LTDA",
+        "bankAlias": "CFEST",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:37290d74ac4d186e3a8e5785"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 11.8,
+        "logAbsoluteAmount": 2.549445,
+        "direction": "DEBIT",
+        "localHour": 7,
+        "localWeekday": 4,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 10,
+        "counterpartyTransactions90d": 25,
+        "medianCounterpartyAmount90d": 10.37,
+        "amountRatioToMedian90d": 1.1379,
+        "sameAmountOccurrences90d": 3,
+        "estimatedCadenceDays": 1,
+        "recurrenceType": "FREQUENT"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "LOW_VALUE_PERSONAL_CONSUMPTION"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "e2789d8d-6d7d-508b-ac40-47795da04a18",
+      "description": "COMPRA DRG BEM",
+      "descriptionRaw": "DRGBEM LJ22 1708",
+      "currencyCode": "BRL",
+      "amount": -88.35,
+      "amountInAccountCurrency": -88.35,
+      "date": "2026-03-11T14:06:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Health",
+      "categoryId": "06000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "674f992c-6765-5eb8-8a96-25c5cecbf72f",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO NUVEM CLARA TI",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100104000172"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "DROGARIA BEM ESTAR LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200028000177"
+        }
+      },
+      "providerId": null,
+      "order": 17,
+      "createdAt": "2026-03-12T13:06:00.000Z",
+      "updatedAt": "2026-03-12T13:06:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO NUVEM CLARA TI",
+        "tradeName": "NUVEM CLARA TI",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100104000172"
+        },
+        "mainCnae": "6209-1/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      },
+      "counterpartyData": {
+        "normalizedName": "DROGARIA BEM ESTAR LTDA",
+        "bankAlias": "DRGBEM",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:20b04a4f018b89f369ce0092"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 88.35,
+        "logAbsoluteAmount": 4.492561,
+        "direction": "DEBIT",
+        "localHour": 11,
+        "localWeekday": 2,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 73.25,
+        "amountRatioToMedian90d": 1.2061,
+        "sameAmountOccurrences90d": 1,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_HEALTH_CATEGORY"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "a875f551-e1a6-5850-a588-727558b501e9",
+      "description": "ESTORNO MOB URB",
+      "descriptionRaw": "EST MOBURB TRIP 16AGO",
+      "currencyCode": "BRL",
+      "amount": 27.42,
+      "amountInAccountCurrency": 27.42,
+      "date": "2026-04-16T20:19:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Transport",
+      "categoryId": "03000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "674f992c-6765-5eb8-8a96-25c5cecbf72f",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MOBILIDADE URBANA APP LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200037000168"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO NUVEM CLARA TI",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100104000172"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "ESTORNO_CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "MOBILIDADE URBANA APP LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200037000168"
+        }
+      },
+      "providerId": null,
+      "order": 18,
+      "createdAt": "2026-04-17T08:19:00.000Z",
+      "updatedAt": "2026-04-17T08:19:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO NUVEM CLARA TI",
+        "tradeName": "NUVEM CLARA TI",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100104000172"
+        },
+        "mainCnae": "6209-1/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      },
+      "counterpartyData": {
+        "normalizedName": "MOBILIDADE URBANA APP LTDA",
+        "bankAlias": "MOBURB",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:9377b038eaec24cab37359e5"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 27.42,
+        "logAbsoluteAmount": 3.347093,
+        "direction": "CREDIT",
+        "localHour": 17,
+        "localWeekday": 3,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 8,
+        "counterpartyTransactions90d": 39,
+        "medianCounterpartyAmount90d": 28.03,
+        "amountRatioToMedian90d": 0.9782,
+        "sameAmountOccurrences90d": 3,
+        "estimatedCadenceDays": 1,
+        "recurrenceType": "FREQUENT"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.84,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_MOBILITY_REFUND"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "66d5364b-7f8f-507a-b88c-671797b184b4",
+      "description": "DEB AUTO FIBRA CASA",
+      "descriptionRaw": "DBAT FIBRACASA 08/26",
+      "currencyCode": "BRL",
+      "amount": -129.9,
+      "amountInAccountCurrency": -129.9,
+      "date": "2026-05-22T00:32:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Home",
+      "categoryId": "01000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "674f992c-6765-5eb8-8a96-25c5cecbf72f",
+      "providerCode": "MOCK_BANK_A",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO NUVEM CLARA TI",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100104000172"
+          }
+        },
+        "paymentMethod": "AUTOMATIC_DEBIT",
+        "reason": null,
+        "receiver": {
+          "name": "FIBRA CASA TELECOM LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200038000102"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "DEBITO_AUTOMATICO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 19,
+      "createdAt": "2026-05-22T18:32:00.000Z",
+      "updatedAt": "2026-05-22T18:32:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO NUVEM CLARA TI",
+        "tradeName": "NUVEM CLARA TI",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100104000172"
+        },
+        "mainCnae": "6209-1/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      },
+      "counterpartyData": {
+        "normalizedName": "FIBRA CASA TELECOM LTDA",
+        "bankAlias": "FIBRACASA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:3b0fe0d342e9fa16a5c68dbb"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 129.9,
+        "logAbsoluteAmount": 4.874434,
+        "direction": "DEBIT",
+        "localHour": 21,
+        "localWeekday": 3,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 152.49,
+        "amountRatioToMedian90d": 0.8519,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 28,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.81,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "RESIDENTIAL_UTILITY"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "5b33a2ca-ca13-5034-b427-bddffb7c1663",
+      "description": "COMPRA MRC FAM",
+      "descriptionRaw": "MRCFAM LJ08 CXP11",
+      "currencyCode": "BRL",
+      "amount": -376.82,
+      "amountInAccountCurrency": -376.82,
+      "date": "2026-03-09T00:51:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Groceries",
+      "categoryId": "02000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "8ea38e69-6c8c-595a-80d5-206efcf72601",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO BELA LINHA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100105000117"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "MERCADO FAMILIA LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200030000146"
+        }
+      },
+      "providerId": null,
+      "order": 20,
+      "createdAt": "2026-03-09T03:51:00.000Z",
+      "updatedAt": "2026-03-09T03:51:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO BELA LINHA",
+        "tradeName": "BELA LINHA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100105000117"
+        },
+        "mainCnae": "9602-5/01",
+        "secondaryCnaes": [],
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      },
+      "counterpartyData": {
+        "normalizedName": "MERCADO FAMILIA LTDA",
+        "bankAlias": "MRCFAM",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:e4d693d24e646cb787842622"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 376.82,
+        "logAbsoluteAmount": 5.934418,
+        "direction": "DEBIT",
+        "localHour": 21,
+        "localWeekday": 6,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 406.92,
+        "amountRatioToMedian90d": 0.926,
+        "sameAmountOccurrences90d": 1,
+        "estimatedCadenceDays": 27,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_GROCERIES"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "6d74258d-903d-5706-8e87-cb58bc37e1a8",
+      "description": "PGTO CLIN SAUDE",
+      "descriptionRaw": "CLINSAUDE FAT 1920",
+      "currencyCode": "BRL",
+      "amount": -245,
+      "amountInAccountCurrency": -245,
+      "date": "2026-04-13T12:04:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Health",
+      "categoryId": "06000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "8ea38e69-6c8c-595a-80d5-206efcf72601",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO BELA LINHA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100105000117"
+          }
+        },
+        "paymentMethod": "PIX",
+        "reason": null,
+        "receiver": {
+          "name": "CLINICA SAUDE INTEGRAL LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200039000157"
+          }
+        },
+        "receiverReferenceId": "syn-ref-6d74258d",
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "PIX",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 21,
+      "createdAt": "2026-04-13T15:04:00.000Z",
+      "updatedAt": "2026-04-13T15:04:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO BELA LINHA",
+        "tradeName": "BELA LINHA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100105000117"
+        },
+        "mainCnae": "9602-5/01",
+        "secondaryCnaes": [],
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      },
+      "counterpartyData": {
+        "normalizedName": "CLINICA SAUDE INTEGRAL LTDA",
+        "bankAlias": "CLINSAUDE",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:bbfeb74a4b4216dfd0f7b10e"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 245,
+        "logAbsoluteAmount": 5.505332,
+        "direction": "DEBIT",
+        "localHour": 9,
+        "localWeekday": 0,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 0,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 272.46,
+        "amountRatioToMedian90d": 0.8992,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_HEALTH_CATEGORY"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "3cbeed58-efd3-5e0a-8da9-492628876225",
+      "description": "COMPRA PET AMIGO",
+      "descriptionRaw": "PETAMIGO LJ03 1808",
+      "currencyCode": "BRL",
+      "amount": -163.74,
+      "amountInAccountCurrency": -163.74,
+      "date": "2026-05-18T17:17:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "8ea38e69-6c8c-595a-80d5-206efcf72601",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO BELA LINHA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100105000117"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "PET AMIGO COMERCIO LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200040000181"
+        }
+      },
+      "providerId": null,
+      "order": 22,
+      "createdAt": "2026-05-19T14:17:00.000Z",
+      "updatedAt": "2026-05-19T14:17:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO BELA LINHA",
+        "tradeName": "BELA LINHA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100105000117"
+        },
+        "mainCnae": "9602-5/01",
+        "secondaryCnaes": [],
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      },
+      "counterpartyData": {
+        "normalizedName": "PET AMIGO COMERCIO LTDA",
+        "bankAlias": "PETAMIGO",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:bbba57318f71911354fdaab5"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 163.74,
+        "logAbsoluteAmount": 5.104368,
+        "direction": "DEBIT",
+        "localHour": 14,
+        "localWeekday": 0,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 4,
+        "medianCounterpartyAmount90d": 176.99,
+        "amountRatioToMedian90d": 0.9251,
+        "sameAmountOccurrences90d": 1,
+        "estimatedCadenceDays": 27,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_PET_EXPENSE"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "996622d4-ccc0-5449-b3ec-eb21e710e994",
+      "description": "DEB AUTO STRM PLAY",
+      "descriptionRaw": "DBAT STRMPLY FAM",
+      "currencyCode": "BRL",
+      "amount": -55.9,
+      "amountInAccountCurrency": -55.9,
+      "date": "2026-06-23T22:30:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Entertainment",
+      "categoryId": "05000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "8ea38e69-6c8c-595a-80d5-206efcf72601",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO BELA LINHA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100105000117"
+          }
+        },
+        "paymentMethod": "AUTOMATIC_DEBIT",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "DEBITO_AUTOMATICO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "STREAMPLAY ENTRETENIMENTO LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200029000111"
+        }
+      },
+      "providerId": null,
+      "order": 23,
+      "createdAt": "2026-06-24T09:30:00.000Z",
+      "updatedAt": "2026-06-24T09:30:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO BELA LINHA",
+        "tradeName": "BELA LINHA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100105000117"
+        },
+        "mainCnae": "9602-5/01",
+        "secondaryCnaes": [],
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      },
+      "counterpartyData": {
+        "normalizedName": "STREAMPLAY ENTRETENIMENTO LTDA",
+        "bankAlias": "STRMPLY",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:dca83e717b1f64eb141057a7"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 55.9,
+        "logAbsoluteAmount": 4.041295,
+        "direction": "DEBIT",
+        "localHour": 19,
+        "localWeekday": 1,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 2,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 53.23,
+        "amountRatioToMedian90d": 1.0502,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 27,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_ENTERTAINMENT"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "59f27c5e-05ab-5ed9-937e-dd0f58b6bdb4",
+      "description": "PIX REC MSF",
+      "descriptionRaw": "PIXREC MSF REF0826",
+      "currencyCode": "BRL",
+      "amount": 230,
+      "amountInAccountCurrency": 230,
+      "date": "2026-07-04T10:43:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Transfer",
+      "categoryId": "04000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "8ea38e69-6c8c-595a-80d5-206efcf72601",
+      "providerCode": "MOCK_BANK_B",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "PESSOA SINTETICA FAMILIAR",
+          "documentNumber": {
+            "type": "CPF_HASH",
+            "value": "sha256:d34a569ab7aaa54dacd7"
+          }
+        },
+        "paymentMethod": "PIX",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO BELA LINHA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100105000117"
+          }
+        },
+        "receiverReferenceId": "syn-ref-59f27c5e",
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "PIX",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 24,
+      "createdAt": "2026-07-04T16:43:00.000Z",
+      "updatedAt": "2026-07-04T16:43:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO BELA LINHA",
+        "tradeName": "BELA LINHA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100105000117"
+        },
+        "mainCnae": "9602-5/01",
+        "secondaryCnaes": [],
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      },
+      "counterpartyData": {
+        "normalizedName": "PESSOA SINTETICA FAMILIAR",
+        "bankAlias": "MSF",
+        "documentType": "CPF_HASH",
+        "identifierToken": "sha256:d34a569ab7aaa54dacd715ae"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 230,
+        "logAbsoluteAmount": 5.442418,
+        "direction": "CREDIT",
+        "localHour": 7,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 226.54,
+        "amountRatioToMedian90d": 1.0153,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 33,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.85,
+        "ambiguousCase": true,
+        "reasonCodes": [
+          "PERSONAL_TRANSFER_PATTERN"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "15d7fb9a-6fa6-59d5-8de4-6d698758ced8",
+      "description": "ESTORNO REST PRACA",
+      "descriptionRaw": "EST CART RESTPRACA 2208",
+      "currencyCode": "BRL",
+      "amount": 92.6,
+      "amountInAccountCurrency": 92.6,
+      "date": "2026-05-15T10:02:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Groceries",
+      "categoryId": "02000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "f9809bbe-92b4-5b30-9860-21269470efd1",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "RESTAURANTE DA PRACA LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200033000180"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": {
+          "name": "MEI SINTETICO VOLT CERTO",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100106000161"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "CREDIT",
+      "operationType": "ESTORNO_CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "RESTAURANTE DA PRACA LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200033000180"
+        }
+      },
+      "providerId": null,
+      "order": 25,
+      "createdAt": "2026-05-16T03:02:00.000Z",
+      "updatedAt": "2026-05-16T03:02:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VOLT CERTO",
+        "tradeName": "VOLT CERTO",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100106000161"
+        },
+        "mainCnae": "4321-5/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Instalacao e manutencao eletrica"
+      },
+      "counterpartyData": {
+        "normalizedName": "RESTAURANTE DA PRACA LTDA",
+        "bankAlias": "RESTPRACA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:ee275d64dafcd283c25b00a6"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 92.6,
+        "logAbsoluteAmount": 4.53903,
+        "direction": "CREDIT",
+        "localHour": 7,
+        "localWeekday": 4,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 0,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 81.92,
+        "amountRatioToMedian90d": 1.1304,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_DINING_REFUND"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "3657a6b4-d1d4-58e9-b6ca-504b5b144c97",
+      "description": "COMPRA MODA LIVRE",
+      "descriptionRaw": "MODALIVRE SHOP 2108",
+      "currencyCode": "BRL",
+      "amount": -188.8,
+      "amountInAccountCurrency": -188.8,
+      "date": "2026-06-20T14:15:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "f9809bbe-92b4-5b30-9860-21269470efd1",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VOLT CERTO",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100106000161"
+          }
+        },
+        "paymentMethod": "CREDIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "MODA LIVRE VAREJO LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200041000126"
+        }
+      },
+      "providerId": null,
+      "order": 26,
+      "createdAt": "2026-06-20T22:15:00.000Z",
+      "updatedAt": "2026-06-20T22:15:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VOLT CERTO",
+        "tradeName": "VOLT CERTO",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100106000161"
+        },
+        "mainCnae": "4321-5/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Instalacao e manutencao eletrica"
+      },
+      "counterpartyData": {
+        "normalizedName": "MODA LIVRE VAREJO LTDA",
+        "bankAlias": "MODALIVRE",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:98eed4ea6cc009c878d36263"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 188.8,
+        "logAbsoluteAmount": 5.245971,
+        "direction": "DEBIT",
+        "localHour": 11,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 165.83,
+        "amountRatioToMedian90d": 1.1385,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_APPAREL"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "659623f1-caf7-5f50-98e9-d376a0470088",
+      "description": "PGTO ESC FUT",
+      "descriptionRaw": "BOL ESCFUT PARC08",
+      "currencyCode": "BRL",
+      "amount": -710,
+      "amountInAccountCurrency": -710,
+      "date": "2026-07-25T20:28:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Education",
+      "categoryId": "11000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "f9809bbe-92b4-5b30-9860-21269470efd1",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VOLT CERTO",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100106000161"
+          }
+        },
+        "paymentMethod": "BOLETO",
+        "reason": null,
+        "receiver": {
+          "name": "ESCOLA FUTURO EDUCACIONAL LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200032000135"
+          }
+        },
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "BOLETO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 27,
+      "createdAt": "2026-07-26T13:28:00.000Z",
+      "updatedAt": "2026-07-26T13:28:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VOLT CERTO",
+        "tradeName": "VOLT CERTO",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100106000161"
+        },
+        "mainCnae": "4321-5/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Instalacao e manutencao eletrica"
+      },
+      "counterpartyData": {
+        "normalizedName": "ESCOLA FUTURO EDUCACIONAL LTDA",
+        "bankAlias": "ESCFUT",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:d64debd942d7dc26a8512315"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 710,
+        "logAbsoluteAmount": 6.566672,
+        "direction": "DEBIT",
+        "localHour": 17,
+        "localWeekday": 5,
+        "isWeekend": true,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 2,
+        "medianCounterpartyAmount90d": 824.31,
+        "amountRatioToMedian90d": 0.8613,
+        "sameAmountOccurrences90d": 0,
+        "estimatedCadenceDays": 30,
+        "recurrenceType": "MONTHLY"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_EDUCATION"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "2b991838-ab7a-5a6f-8eed-696da8427a5d",
+      "description": "PIX ENV ODONTO VIDA",
+      "descriptionRaw": "PIXENV ODONTOVIDA PROC18",
+      "currencyCode": "BRL",
+      "amount": -420,
+      "amountInAccountCurrency": -420,
+      "date": "2026-08-07T00:41:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Health",
+      "categoryId": "06000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "f9809bbe-92b4-5b30-9860-21269470efd1",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VOLT CERTO",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100106000161"
+          }
+        },
+        "paymentMethod": "PIX",
+        "reason": null,
+        "receiver": {
+          "name": "ODONTO VIDA CLINICA LTDA",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98200042000170"
+          }
+        },
+        "receiverReferenceId": "syn-ref-2b991838",
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "PIX",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": null,
+      "providerId": null,
+      "order": 28,
+      "createdAt": "2026-08-07T06:41:00.000Z",
+      "updatedAt": "2026-08-07T06:41:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VOLT CERTO",
+        "tradeName": "VOLT CERTO",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100106000161"
+        },
+        "mainCnae": "4321-5/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Instalacao e manutencao eletrica"
+      },
+      "counterpartyData": {
+        "normalizedName": "ODONTO VIDA CLINICA LTDA",
+        "bankAlias": "ODONTOVIDA",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:f62e610834f27439cddf899d"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 420,
+        "logAbsoluteAmount": 6.042633,
+        "direction": "DEBIT",
+        "localHour": 21,
+        "localWeekday": 3,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 1,
+        "counterpartyTransactions90d": 3,
+        "medianCounterpartyAmount90d": 403.16,
+        "amountRatioToMedian90d": 1.0418,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": null,
+        "recurrenceType": "IRREGULAR"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "PERSONAL_HEALTH_CATEGORY"
+        ]
+      },
+      "isSynthetic": true
+    },
+    {
+      "id": "74817772-cf9d-544a-9eba-dec175671bda",
+      "description": "RSCSS CAFE EST",
+      "descriptionRaw": "RSCSS CFEST 2508 19H",
+      "currencyCode": "BRL",
+      "amount": -8.2,
+      "amountInAccountCurrency": -8.2,
+      "date": "2026-02-11T12:54:00.000Z",
+      "timezone": "America/Sao_Paulo",
+      "category": "Shopping",
+      "categoryId": "08000000",
+      "categorySource": "MOCK_BANK_PROVIDER",
+      "balance": null,
+      "accountId": "f9809bbe-92b4-5b30-9860-21269470efd1",
+      "providerCode": "MOCK_BANK_C",
+      "status": "POSTED",
+      "paymentData": {
+        "payer": {
+          "name": "MEI SINTETICO VOLT CERTO",
+          "documentNumber": {
+            "type": "CNPJ",
+            "value": "98100106000161"
+          }
+        },
+        "paymentMethod": "DEBIT_CARD",
+        "reason": null,
+        "receiver": null,
+        "receiverReferenceId": null,
+        "referenceNumber": null,
+        "boletoMetadata": null
+      },
+      "type": "DEBIT",
+      "operationType": "CARTAO",
+      "creditCardMetadata": null,
+      "acquirerData": null,
+      "merchant": {
+        "name": "CAFE ESTACAO EXPRESS LTDA",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98200027000122"
+        }
+      },
+      "providerId": null,
+      "order": 29,
+      "createdAt": "2026-02-12T04:54:00.000Z",
+      "updatedAt": "2026-02-12T04:54:00.000Z",
+      "businessContext": {
+        "companyType": "MEI",
+        "legalName": "MEI SINTETICO VOLT CERTO",
+        "tradeName": "VOLT CERTO",
+        "documentNumber": {
+          "type": "CNPJ",
+          "value": "98100106000161"
+        },
+        "mainCnae": "4321-5/00",
+        "secondaryCnaes": [],
+        "businessActivity": "Instalacao e manutencao eletrica"
+      },
+      "counterpartyData": {
+        "normalizedName": "CAFE ESTACAO EXPRESS LTDA",
+        "bankAlias": "CFEST",
+        "documentType": "CNPJ",
+        "identifierToken": "sha256:37290d74ac4d186e3a8e5785"
+      },
+      "derivedFeatures": {
+        "absoluteAmount": 8.2,
+        "logAbsoluteAmount": 2.219203,
+        "direction": "DEBIT",
+        "localHour": 9,
+        "localWeekday": 2,
+        "isWeekend": false,
+        "counterpartyTransactions30d": 13,
+        "counterpartyTransactions90d": 39,
+        "medianCounterpartyAmount90d": 9.5,
+        "amountRatioToMedian90d": 0.8632,
+        "sameAmountOccurrences90d": 2,
+        "estimatedCadenceDays": 3,
+        "recurrenceType": "FREQUENT"
+      },
+      "target": {
+        "classification": "PERSONAL",
+        "labelSource": "SYNTHETIC_REVIEWED",
+        "labelConfidence": 0.96,
+        "ambiguousCase": false,
+        "reasonCodes": [
+          "LOW_VALUE_PERSONAL_CONSUMPTION"
+        ]
+      },
+      "isSynthetic": true
+    }
+  ]
+}

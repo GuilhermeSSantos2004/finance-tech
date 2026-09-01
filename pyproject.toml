@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "finance-transaction-classifier"
+version = "0.1.0"
+description = "Classificador de transacoes pessoais e comerciais para contas de MEI"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "joblib>=1.3,<2.0",
+  "scikit-learn>=1.4,<2.0",
+]
+
+[project.scripts]
+finance-classifier = "finance_classifier.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
