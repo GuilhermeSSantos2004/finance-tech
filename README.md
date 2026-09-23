@@ -23,7 +23,8 @@ O projeto combina descrições bancárias incompletas com o contexto da empresa.
 ## Estrutura
 
 ```text
-data/synthetic/             datasets separados por classe
+data/training/              todos os datasets usados no treinamento
+data/benchmark/             benchmark cego, separado do treino
 src/finance_classifier/     carregamento, features, modelo, treino e CLI
 tests/                      testes de dados, vazamento e modelo
 artifacts/                  saída local dos treinamentos, ignorada pelo Git
@@ -62,6 +63,8 @@ python -m pip install -e .
 
 ## Treinamento
 
+Por padrão, o comando lê automaticamente **todos os arquivos `.json` dentro de `data/training/`**. Para adicionar novos dados de treino, basta colocar outro JSON válido nessa pasta; não é necessário alterar o código nem o comando.
+
 ```bash
 python -m finance_classifier train \
   --business data/synthetic/transacoes_comerciais_30.json \
@@ -84,7 +87,7 @@ O arquivo de entrada pode conter uma transação, uma lista ou um objeto com a c
 ```bash
 python -m finance_classifier predict \
   --model artifacts/transaction_classifier.joblib \
-  --input data/synthetic/transacoes_comerciais_30.json
+  --input data/training/transacoes_comerciais_30.json
 ```
 
 Exemplo de saída:
