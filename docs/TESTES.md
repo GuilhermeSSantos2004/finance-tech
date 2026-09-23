@@ -55,10 +55,13 @@ OK
 
 ## 3. Executar um treinamento completo
 
+O treinamento procura automaticamente todos os arquivos `.json` em `data/training/`. Se novos datasets forem adicionados nessa pasta, eles entram automaticamente no próximo treino.
+
+
 No PowerShell, use uma única linha:
 
 ```powershell
-python -m finance_classifier train --business data/synthetic/transacoes_comerciais_30.json --personal data/synthetic/transacoes_pessoais_30.json --output artifacts
+python -m finance_classifier train --output artifacts
 ```
 
 No Linux ou macOS:
@@ -105,7 +108,7 @@ Resultado atual com a semente `42`:
 Depois do treinamento, classifique o dataset pessoal:
 
 ```powershell
-python -m finance_classifier predict --model artifacts/transaction_classifier.joblib --input data/synthetic/transacoes_pessoais_30.json --output artifacts/previsoes_pessoais.json
+python -m finance_classifier predict --model artifacts/transaction_classifier.joblib --input data/training/transacoes_pessoais_30.json --output artifacts/previsoes_pessoais.json
 ```
 
 O resultado será salvo em `artifacts/previsoes_pessoais.json`.
