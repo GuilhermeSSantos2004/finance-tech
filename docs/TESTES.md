@@ -37,7 +37,7 @@ python -m unittest discover -s tests -v
 Resultado esperado:
 
 ```text
-Ran 6 tests
+Ran 7 tests
 
 OK
 ```
@@ -67,10 +67,7 @@ python -m finance_classifier train --output artifacts
 No Linux ou macOS:
 
 ```bash
-python -m finance_classifier train \
-  --business data/synthetic/transacoes_comerciais_30.json \
-  --personal data/synthetic/transacoes_pessoais_30.json \
-  --output artifacts
+python -m finance_classifier train --output artifacts
 ```
 
 Arquivos esperados:
