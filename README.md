@@ -66,10 +66,7 @@ python -m pip install -e .
 Por padrão, o comando lê automaticamente **todos os arquivos `.json` dentro de `data/training/`**. Para adicionar novos dados de treino, basta colocar outro JSON válido nessa pasta; não é necessário alterar o código nem o comando.
 
 ```bash
-python -m finance_classifier train \
-  --business data/synthetic/transacoes_comerciais_30.json \
-  --personal data/synthetic/transacoes_pessoais_30.json \
-  --output artifacts
+python -m finance_classifier train --output artifacts
 ```
 
 O comando gera localmente:
