@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Sequence
 
-from finance_classifier.data import extract_transactions, load_training_data
+from finance_classifier.data import extract_transactions, load_training_data, load_training_directory
 from finance_classifier.model import TransactionClassifier
 from finance_classifier.training import train_and_save
 
@@ -20,8 +20,14 @@ def _parser() -> argparse.ArgumentParser:
     commands = parser.add_subparsers(dest="command", required=True)
 
     train = commands.add_parser("train", help="Treina e avalia o classificador")
-    train.add_argument("--business", required=True, type=Path)
-    train.add_argument("--personal", required=True, type=Path)
+    train.add_argument(
+        "--data-dir",
+        type=Path,
+        default=Path("data/training"),
+        help="Pasta com os arquivos JSON usados no treinamento.",
+    )
+    train.add_argument("--business", type=Path, help=argparse.SUPPRESS)
+    train.add_argument("--personal", type=Path, help=argparse.SUPPRESS)
     train.add_argument("--output", type=Path, default=Path("artifacts"))
     train.add_argument("--test-size", type=float, default=0.25)
     train.add_argument("--random-state", type=int, default=42)
@@ -34,7 +40,12 @@ def _parser() -> argparse.ArgumentParser:
 
 
 def _train(args: argparse.Namespace) -> int:
-    transactions, labels, groups = load_training_data([args.business, args.personal])
+    if args.business or args.personal:
+        if not (args.business and args.personal):
+            raise SystemExit("--business e --personal precisam ser usados juntos")
+        transactions, labels, groups = load_training_data([args.business, args.personal])
+    else:
+        transactions, labels, groups = load_training_directory(args.data_dir)
     result = train_and_save(
         transactions,
         labels,
