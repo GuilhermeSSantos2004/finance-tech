@@ -1,0 +1,1964 @@
+{
+  "referenceMetadata": {
+    "name": "open_finance_brasil_accounts_v2_5_reference_140",
+    "version": "1.0.0",
+    "recordCount": 140,
+    "synthetic": true,
+    "note": "Reference representation of the same benchmark using the core transaction fields from Open Finance Brasil Accounts v2.5. It is not the input expected by finance-tech without an adapter."
+  },
+  "transactions": [
+    {
+      "transactionId": "fa106be74a0751e085f717ff68f46541",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "SAQUE SAQATM SAQUE 2146 T05",
+      "type": "SAQUE",
+      "transactionAmount": {
+        "amount": "250.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-18T20:46:00.000Z"
+    },
+    {
+      "transactionId": "b9631685c08252d7b05307d056db4924",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CONVE ENRURB RESID 3515 T06",
+      "type": "CONVENIO_ARRECADACAO",
+      "transactionAmount": {
+        "amount": "262.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-25T13:05:00.000Z",
+      "partieCnpjCpf": "98151615000113",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0b7490074e3d59e3ac2ab319ceb6220b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MDPLAY PLANO 3811 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "99.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-02T20:01:00.000Z",
+      "partieCnpjCpf": "98151751000103",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "5a36602ea0af54a394cd3384ee389336",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DPNVOBR PECA 2220 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "63.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-22T23:00:00.000Z",
+      "partieCnpjCpf": "98151020000168",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "69dcd00515e8510da6ae892d0470f91d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TNSURB PRESENTE 4477 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "391.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-20T20:07:00.000Z",
+      "partieCnpjCpf": "98152057000100",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "98e4a24b39d7590e93039a72af56d685",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TNSURB PRESENTE 4699 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "715.30",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-26T14:49:00.000Z",
+      "partieCnpjCpf": "98152159000126",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "aeb75701be0c5eb1a8cebf80da50c41e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC JTPX CREDAVULSO 5143 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "4707.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-07T20:13:00.000Z",
+      "partieCnpjCpf": "95000430921",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "85a78c28f08d5cfaa2b5289fe81215a4",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GS82 APOIO 2442 T04",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1135.22",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-26T18:42:00.000Z",
+      "partieCnpjCpf": "90000244201",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "50e2878d9c6e5a1ca1d38d4f6fc11ebc",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 2886 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1950.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-08T15:06:00.000Z",
+      "partieCnpjCpf": "92000007899",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "54331bc47abc58158339469ab2e4e0f7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA PSTVNRT ABAST 0925 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "287.75",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-16T17:55:00.000Z",
+      "partieCnpjCpf": "98150425000181",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "82018672515a5c4d86ab2668281d4f8e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CNCTEMP LINK 0777 T04",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "159.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-12T18:27:00.000Z",
+      "partieCnpjCpf": "98150357000150",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "4c6b13c4cc655cbea36d1d337f0a9ff1",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LJVRCTR ESTORNOPES 4366 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "228.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-17T14:46:00.000Z",
+      "partieCnpjCpf": "98152006000189",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "7cf5da35183b5a59be32691d8063387a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC RPSENTR REPASSE 0851 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "5245.19",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-14T13:41:00.000Z",
+      "partieCnpjCpf": "98150391000125",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "51a901c759d5500f89387bd61c481fcf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ELTLAR CASAPROPRI 3922 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1683.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-05T17:22:00.000Z",
+      "partieCnpjCpf": "98151802000105",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "ef800945caae55b7ab3eba6ba8da196a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CBFRTE PECA 2035 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "21.25",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-15T23:25:00.000Z",
+      "partieCnpjCpf": "98150935000159",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "81435bbd5fb7596d8726f2b1353669a8",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV CN68 OS 1850 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "668.50",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-10T13:50:00.000Z",
+      "partieCnpjCpf": "90000185019",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "ac00af999f015e6f8a8f560fe252ae37",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DCRLAR REFORMACAS 3663 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1306.10",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-29T12:33:00.000Z",
+      "partieCnpjCpf": "98151683000182",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0d5136bb00dc5f69ac90e67bd81022a7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC DSCBLL ESTORNO 1628 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "224.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-04T19:08:00.000Z",
+      "partieCnpjCpf": "98150748000175",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "70c62246d1335f0fbf8c833c2a9d37b5",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LJVRCTR ESTORNOPES 4181 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "123.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-12T13:11:00.000Z",
+      "partieCnpjCpf": "98151921000150",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0a8392e6c58e5332b8626763776cc7cf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA STRMPLY ASSINATURA 2590 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "199.10",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-30T17:10:00.000Z",
+      "partieCnpjCpf": "98151190000142",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "32172127d93051759a9bd79fa2e140ef",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA PSTVNRT ABAST 0555 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "114.65",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-06T15:45:00.000Z",
+      "partieCnpjCpf": "98150255000135",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "dcb6318353745fc4a254e4676a2e4a78",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CNMPR CINEMA 3034 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "579.86",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-12T14:34:00.000Z",
+      "partieCnpjCpf": "98151394000183",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "ec7bbf132caf5fcc9f1e1fb839548594",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CNCTEMP LINK 0962 T09",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "199.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-17T19:02:00.000Z",
+      "partieCnpjCpf": "98150442000119",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "24b886f5d7855083abfa4e95e6a74bfc",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV JT3 OS 1665 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "522.65",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-05T12:15:00.000Z",
+      "partieCnpjCpf": "90000166570",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "11cae607e615546b8bac2d217cf50c98",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 2701 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1950.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-03T14:31:00.000Z",
+      "partieCnpjCpf": "92000007384",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "b8bdacd144df531d9dc75b8dd1d9e5f1",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET EMBPKSL INSUMOS 0185 T06",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "546.85",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-26T13:35:00.000Z",
+      "partieCnpjCpf": "98150085000199",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "136ec1e9658c57aba474583cffa45077",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV CLDNXA NF 2553 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "859.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-29T15:03:00.000Z",
+      "partieCnpjCpf": "98151173000105",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "ac7b0fc6e8bc5377944226d662f2ac1d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC GPLGSL PGTOOS 0037 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "591.53",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-22T14:07:00.000Z",
+      "partieCnpjCpf": "98150017000120",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "e8b3ef7b9ed95b7f9c6bd607661eca08",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DPNVOBR INSUMOS 0444 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1060.44",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-03T18:24:00.000Z",
+      "partieCnpjCpf": "98150204000103",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "520f80fa7985524dbfbaa18242ddd128",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC RPSENTR PGTOOS 0407 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2706.83",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-02T16:17:00.000Z",
+      "partieCnpjCpf": "98150187000104",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "3797aea32cc751e3bd9d70ad789e8baf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA AUTCRS CARROPART 4736 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "2962.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-27T16:56:00.000Z",
+      "partieCnpjCpf": "98152176000163",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0bbe03db47e652979eec253edacad727",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET EMBPKSL PEDIDO 1073 T03",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "457.73",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-20T16:23:00.000Z",
+      "partieCnpjCpf": "98150493000140",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1e0eab62f4ae51b3a8faad16c8877431",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV EM35 OS 1480 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "376.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-31T20:40:00.000Z",
+      "partieCnpjCpf": "90000148083",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "9f76ccc2da8456be8f731fc7bd245a13",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV BL17 APOIO 2257 T08",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "989.37",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-21T17:07:00.000Z",
+      "partieCnpjCpf": "90000225762",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "62d5b062176058d89ef278a72eb57a3a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV FR27 OS 0629 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "755.89",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-08T19:59:00.000Z",
+      "partieCnpjCpf": "90000062952",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "f116ceaf672f523c90951bea0a0ce542",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV MDPX AJUDA 3367 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "649.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-21T14:37:00.000Z",
+      "partieCnpjCpf": "93000172920",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "cf743b34c6c15db0938c595becb8bf5c",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCFAM FESTAFAMIL 3848 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1575.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-03T13:08:00.000Z",
+      "partieCnpjCpf": "98151768000160",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "5bd257f7a278547abad95c28364daa72",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC CLDNXA ESTORNO 1443 T04",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "107.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-30T18:33:00.000Z",
+      "partieCnpjCpf": "98150663000197",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "decc332362a05c5282a198e9f7c22438",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TXPTCRT INSUMOS 0148 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "473.48",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-25T20:28:00.000Z",
+      "partieCnpjCpf": "98150068000151",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b5277f416b7a5cf9968b189168afe953",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC FRPX VENDABEM 4995 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "4255.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-03T12:45:00.000Z",
+      "partieCnpjCpf": "95000418557",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "9501a635b30458d798d5bbfdf2d588a4",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DSCBLL INSUMOS 0074 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "326.74",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-23T16:14:00.000Z",
+      "partieCnpjCpf": "98150034000167",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "a4c4432e0e0656ddb95ea9cd74ffc0a4",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CONVE ENRURB RESID 3330 T01",
+      "type": "CONVENIO_ARRECADACAO",
+      "transactionAmount": {
+        "amount": "329.20",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-20T12:30:00.000Z",
+      "partieCnpjCpf": "98151530000135",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "641c2adc7d405e9da713555e8638ec5f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV MD67 OS 1295 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1280.95",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-26T19:05:00.000Z",
+      "partieCnpjCpf": "90000129534",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "5fc4c5e8fec05537a3bf93bffb93bbc7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA BLZBOX PRESENTE 4847 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "930.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-30T13:17:00.000Z",
+      "partieCnpjCpf": "98152227000157",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1bad164178cc5bfab45856afcb1a94a1",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC EMRF REEMBFAM 3885 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "5445.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-04T15:15:00.000Z",
+      "partieCnpjCpf": "94000241508",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "190a883414e7553492b9a4f9ed47872e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV JTPX AJUDA 3737 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "927.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-31T16:47:00.000Z",
+      "partieCnpjCpf": "93000191984",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "2a4ae3406bc450e29299f90dc06b53c6",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV DR60 OS 0999 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1047.59",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-18T12:09:00.000Z",
+      "partieCnpjCpf": "90000099953",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "ffbaef92403e55ef857a58533df69598",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CNCTEMP LINK 0592 T08",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "119.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-07T17:52:00.000Z",
+      "partieCnpjCpf": "98150272000172",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "d83242ece5dd5d55bf254e01e8a6ae10",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCECO CASA 3404 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "842.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-22T16:44:00.000Z",
+      "partieCnpjCpf": "98151564000120",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "954fe3f12e3e50d2825fe3f370d96d41",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV EMBPKSL NF 2183 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "449.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-19T13:53:00.000Z",
+      "partieCnpjCpf": "98151003000120",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "656989a002a75e659e8de41b70ca7619",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MDPLAY PLANO 3626 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "79.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-28T19:26:00.000Z",
+      "partieCnpjCpf": "98151666000145",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b0765b61d8ab5dbdbd0b8c73b32a7f14",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA BLZBOX PRESENTE 5069 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1254.30",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-05T14:59:00.000Z",
+      "partieCnpjCpf": "98152329000172",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "3308fb6921e55cb2873583a9d3ec020d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MVCNV MOVEISCASA 2923 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "484.67",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-09T17:13:00.000Z",
+      "partieCnpjCpf": "98151343000151",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1febef998eeb5800af88bcf5a3ae2062",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA AUTCRS CARROPART 5106 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1152.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-06T18:06:00.000Z",
+      "partieCnpjCpf": "98152346000100",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b4a359d2670358eba530999b2e476f72",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA AUTCRS CARROPART 4921 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "757.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-01T17:31:00.000Z",
+      "partieCnpjCpf": "98152261000121",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b17f165a5cc95331bb70c6c85020cdfd",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC DPNVOBR ESTORNO 1998 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "38.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-14T12:18:00.000Z",
+      "partieCnpjCpf": "98150918000111",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "644c1b0c331a55ca9e4f932f02a81ba5",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 4218 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2300.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-13T15:18:00.000Z",
+      "partieCnpjCpf": "92000011497",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "cc931b2101df596aa3605a423402bf3a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DPNVOBR PECA 1776 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "37.95",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-08T18:36:00.000Z",
+      "partieCnpjCpf": "98150816000104",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "a29026b32c4b51c4a4357c7ec67c22af",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV EMPX AJUDA 3552 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "788.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-26T15:12:00.000Z",
+      "partieCnpjCpf": "93000182489",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "13361aeb694a5e7387cbb05ae0790783",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MKT*PCCD KIT 1702 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "169.34",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-06T14:22:00.000Z",
+      "partieCnpjCpf": "98150782000140",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "beae83e5eb6f529f96ea2e43f88c3afb",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MKT*PCCD KIT 1332 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "486.44",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-27T12:12:00.000Z",
+      "partieCnpjCpf": "98150612000165",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "916a605cf2475412bc7ee5bbfdf37304",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA BLZBOX PRESENTE 3293 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "767.10",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-19T19:23:00.000Z",
+      "partieCnpjCpf": "98151513000106",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "60d836e0522c503db803e2bd72fc54f3",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCECO CASA 3589 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1078.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-27T17:19:00.000Z",
+      "partieCnpjCpf": "98151649000108",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "fafdadc51d4c55a493deeaceef1edf06",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ESTCSL ESTAC 1369 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "25.50",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-28T14:19:00.000Z",
+      "partieCnpjCpf": "98150629000112",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "97f61fa4e0185b8fa5218c760e0acb03",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC HAPX VENDABEM 4625 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "3125.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-24T19:35:00.000Z",
+      "partieCnpjCpf": "95000387570",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "d334030512cd5fa7a371b61bdd100e8b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MKT*PCCD KIT 1517 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "792.89",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-01T13:47:00.000Z",
+      "partieCnpjCpf": "98150697000181",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "e29040f736615dc08f99bc5db88aa4e6",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CONVE ENRURB RESID 3700 T02",
+      "type": "CONVENIO_ARRECADACAO",
+      "transactionAmount": {
+        "amount": "196.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-30T14:40:00.000Z",
+      "partieCnpjCpf": "98151700000181",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b8dc17255df052b495b08eb07a257fce",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV IB49 APOIO 2072 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "843.52",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-16T16:32:00.000Z",
+      "partieCnpjCpf": "90000207276",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "d5849fd4b04e5e8580c4a4a6078e8571",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "SAQUE SAQATM SAQUE 2516 T06",
+      "type": "SAQUE",
+      "transactionAmount": {
+        "amount": "250.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-28T13:56:00.000Z"
+    },
+    {
+      "transactionId": "77beae1657db51a4a67d982b9b8294bc",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC AMPX VENDABEM 4810 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "3690.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-29T20:10:00.000Z",
+      "partieCnpjCpf": "95000403010",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "c5974a57d94b5deab92840739bb27a92",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA VJAZUL VIAGEM 2849 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "421.21",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-07T13:59:00.000Z",
+      "partieCnpjCpf": "98151309000187",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {      "transactionId": "6a1a14b8807a52ae8a874f88fe5a2a5f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LJVRCTR ESTORNOPES 4551 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "333.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-22T15:21:00.000Z",
+      "partieCnpjCpf": "98152091000185",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "04566bbd78d6574fba40d6dc61829f51",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA PSTVNRT ABAST 0740 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "201.20",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-11T16:20:00.000Z",
+      "partieCnpjCpf": "98150340000101",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "32a31e37baf45825a3f56587f91d3d89",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MKT*PCCD KIT 1887 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "475.79",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-11T15:57:00.000Z",
+      "partieCnpjCpf": "98150867000128",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "eaa64d22633859dc9c0c3ff8636a561f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA PSTVNRT ABAST 1110 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "134.30",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-21T18:30:00.000Z",
+      "partieCnpjCpf": "98150510000140",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "a43dd8c2768454878bf2aaa9235ae7c4",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV IB28 OS 1184 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1193.44",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-23T13:44:00.000Z",
+      "partieCnpjCpf": "90000118419",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "7f791599c328504782a33edc7c6b843e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ESCCAM MENSALIDAD 2775 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "357.75",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-05T18:45:00.000Z",
+      "partieCnpjCpf": "98151275000120",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "47191947d61055c19b5803f91657876b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CNCTEMP LINK 1147 T05",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "239.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-22T20:37:00.000Z",
+      "partieCnpjCpf": "98150527000105",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "a2e47fd0b52d546d85bed821d2156acb",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 4033 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2300.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-08T14:43:00.000Z",
+      "partieCnpjCpf": "92000010920",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "115a3026c6d354a59c76052e503fa6c7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY PCGAMER 4884 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "984.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-31T14:24:00.000Z",
+      "partieCnpjCpf": "98152244000194",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "8862051eb52351b2baa14c8a1698eeb4",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CLDNXA INSUMOS 0333 T01",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "840.33",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-30T12:03:00.000Z",
+      "partieCnpjCpf": "98150153000110",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "7ebc564867ca525d8fa732a9d0e66e41",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LJVRCTR ESTORNOPES 3996 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "798.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-07T12:36:00.000Z",
+      "partieCnpjCpf": "98151836000191",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "caa17684f7255967998f0beafb99e686",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CONVE ENRURB RESID 3145 T05",
+      "type": "CONVENIO_ARRECADACAO",
+      "transactionAmount": {
+        "amount": "163.20",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-15T20:55:00.000Z",
+      "partieCnpjCpf": "98151445000177",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "81d3bf7a36e8559993df921a6c6855d2",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC JTRF REEMBFAM 4070 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "5890.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-09T16:50:00.000Z",
+      "partieCnpjCpf": "94000253000",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "5399fbd350525ee1a809aa395509fe12",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 3071 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1950.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-13T16:41:00.000Z",
+      "partieCnpjCpf": "92000008356",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "c758a78aea7b5135b037c74b390881ae",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CLDNXA PECA 2109 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "37.95",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-18T01:39:00.000Z",
+      "partieCnpjCpf": "98150969000143",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "592cc6ad22da52cc9e07e05d2b2d51c7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC EMPX CREDAVULSO 4958 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "4142.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-02T19:38:00.000Z",
+      "partieCnpjCpf": "95000415450",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "445d5d0cab9a5629b2306f1003ad4d9b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV LF92 OS 0814 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "901.74",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-13T20:34:00.000Z",
+      "partieCnpjCpf": "90000081400",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "dede5acbfb6b57a99389286454c64d5e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GSPX AJUDA 3182 T06",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "510.80",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-16T13:02:00.000Z",
+      "partieCnpjCpf": "93000163425",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "fa7e80b94db1557ea65d05ac505a092d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC OBRNEXO REPASSE 0666 T01",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "4187.54",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-09T12:06:00.000Z",
+      "partieCnpjCpf": "98150306000129",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "2549ca427f035f32b780e816ed326eaa",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TXPTCRT PEDIDO 1258 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "824.58",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-25T17:58:00.000Z",
+      "partieCnpjCpf": "98150578000129",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "fb7e4ddd6ded5d4a94ebdeeae1b29509",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY GAME 4514 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "4754.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-21T13:14:00.000Z",
+      "partieCnpjCpf": "98152074000148",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "a1e0264824bb58568a2965dd1a23703a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY GAME 4144 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "4084.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-11T20:04:00.000Z",
+      "partieCnpjCpf": "98151904000112",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "51b7259faff45648bc5da5b815854e67",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA EMBPKSL PECA 2405 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "29.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-29T23:35:00.000Z",
+      "partieCnpjCpf": "98151105000146",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "84d9c06756365fbabaeee3b456b2462a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV TXPTCRT NF 2368 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "654.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-24T14:28:00.000Z",
+      "partieCnpjCpf": "98151088000147",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "d1b2bd0e756d5038bc18e868f5b07d07",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DSCBLL PECA 1406 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "29.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-29T16:26:00.000Z",
+      "partieCnpjCpf": "98150646000150",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "79bcfd1f4a295142ab640e9cff5e7739",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC GPLGSL PGTOOS 0481 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "3129.89",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-04T20:31:00.000Z",
+      "partieCnpjCpf": "98150221000140",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "7635d2e171fa5a839cff761323882969",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LGPONTE REPASSE 1221 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1460.49",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-24T15:51:00.000Z",
+      "partieCnpjCpf": "98150561000171",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1d196f2dc5bd5f5f89acab7ba845dbb9",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ELTLAR CASAPROPRI 5032 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1200.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-09-04T14:52:00.000Z",
+      "partieCnpjCpf": "98152312000115",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "146119cef5e55fb5965125d79046f2b7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CBFRTE PEDIDO 0703 T02",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "1574.03",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-10T14:13:00.000Z",
+      "partieCnpjCpf": "98150323000166",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "398131228c2a59629ad9567b3a55547d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MRCBD COMPRAMERC 2812 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "389.48",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-06T20:52:00.000Z",
+      "partieCnpjCpf": "98151292000168",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "c694fd63f83a5a6aab92f59902ea5c25",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC MDPX CREDAVULSO 4773 T04",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "3577.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-28T18:03:00.000Z",
+      "partieCnpjCpf": "95000399900",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "1bba427cc09357bb8e3c1c2c6a79851f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CNMPR CINEMA 2664 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "262.56",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-02T12:24:00.000Z",
+      "partieCnpjCpf": "98151224000107",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "46ae242511815a7b980f80bde7f3ecaf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC HARF REEMBFAM 4440 T04",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1680.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-19T18:00:00.000Z",
+      "partieCnpjCpf": "94000276050",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "495f32dca04852039fcab94c39709b21",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CBFRTE PECA 2479 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "46.30",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-28T01:49:00.000Z",
+      "partieCnpjCpf": "98151139000130",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "fa538eedb483583c906579ab0317021f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC CBFRTE ESTORNO 1813 T05",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "341.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-09T20:43:00.000Z",
+      "partieCnpjCpf": "98150833000133",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b38de36f49185eb6aa875468ee6dbeaf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DRGSDJ FARMACIA 2997 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "548.13",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-11T12:27:00.000Z",
+      "partieCnpjCpf": "98151377000146",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "6022012d0e235053b3b18ba47229d2a1",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA STRMPLY ASSINATURA 2960 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "516.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-10T19:20:00.000Z",
+      "partieCnpjCpf": "98151360000199",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "b6027a7a5a465c2d9c5812cf29aa804b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC CNRF REEMBFAM 4255 T08",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1235.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-14T17:25:00.000Z",
+      "partieCnpjCpf": "94000264559",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "a9d741b8a87b5e90b43f8b0ee65cb64f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DPNVOBR PEDIDO 0888 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1940.88",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-15T15:48:00.000Z",
+      "partieCnpjCpf": "98150408000144",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "940925cdc89a5a93a968eb3948017273",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MDPLAY PLANO 3441 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "59.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-23T18:51:00.000Z",
+      "partieCnpjCpf": "98151581000167",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "234f1d6fb1515dc3a10460c6eea66e64",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DPNVOBR INSUMOS 0000 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "180.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-21T12:00:00.000Z",
+      "partieCnpjCpf": "98150000000172",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "5e30e42dcbf35095b5dd3db03c767dcd",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA CBFRTE PECA 1591 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "71.35",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-03T17:01:00.000Z",
+      "partieCnpjCpf": "98150731000118",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1f029333855d5c1a983152500ac191b9",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ESTCSL ESTAC 1739 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "55.50",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-07T16:29:00.000Z",
+      "partieCnpjCpf": "98150799000105",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "48c609e25d11583aa23f0824a6089606",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DCRLAR REFORMACAS 4107 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1952.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-10T18:57:00.000Z",
+      "partieCnpjCpf": "98151887000113",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "3a4141805f985b8fbb70a6c58f225f20",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DRGSDJ FARMACIA 2627 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "230.83",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-01T19:17:00.000Z",
+      "partieCnpjCpf": "98151207000161",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0de2a542df885513a6b47ab0d23dc8bf",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCECO CASA 3774 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "374.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-01T18:54:00.000Z",
+      "partieCnpjCpf": "98151734000176",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "0c6564800c8d51a8b727f6a60d1bb00b",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC LGPONTE PGTOOS 0111 T04",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1014.59",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-24T18:21:00.000Z",
+      "partieCnpjCpf": "98150051000102",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "45c44f1c80ef5116af85b7025c8479d3",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC EVTLFIN REPASSE 1036 T02",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "402.84",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-19T14:16:00.000Z",
+      "partieCnpjCpf": "98150476000103",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "2883ead92060525c9717dbd861ad4426",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY GAME 4329 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "4419.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-16T12:39:00.000Z",
+      "partieCnpjCpf": "98151989000139",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "4306770f666b5f949f972b601b9cf14e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ESTCSL ESTAC 1554 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "18.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-02T15:54:00.000Z",
+      "partieCnpjCpf": "98150714000180",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "1a8ac01e78615d9e982350cc3c66a02a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCFAM FESTAFAMIL 4292 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "2222.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-15T19:32:00.000Z",
+      "partieCnpjCpf": "98151972000181",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "9e53b3e70ee85eb8b81e7fe1f0433b0e",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "BOLET CBFRTE INSUMOS 0259 T08",
+      "type": "BOLETO",
+      "transactionAmount": {
+        "amount": "693.59",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-28T17:49:00.000Z",
+      "partieCnpjCpf": "98150119000145",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "18dc5fc9f24b53caa070fae4f39e13d7",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TXPTCRT INSUMOS 0370 T02",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "913.70",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-01T14:10:00.000Z",
+      "partieCnpjCpf": "98150170000157",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "fc3e95d0f73456a699dd1ba17adb169d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ATCECO CASA 3219 T07",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "606.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-17T15:09:00.000Z",
+      "partieCnpjCpf": "98151479000161",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "3f04216a5a955a57ad9a9b619731e560",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 4403 T03",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2300.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-18T16:53:00.000Z",
+      "partieCnpjCpf": "92000011900",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "fd4a0dc987b0570b8c1bfa85d7f119c9",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ACDMOV ACADEMIA 3108 T04",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "643.32",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-14T18:48:00.000Z",
+      "partieCnpjCpf": "98151428000130",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "723a946212ec5b5fbd8c51e595a12364",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "PIXENV GTSINT RETTIT 4588 T08",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2300.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-23T17:28:00.000Z",
+      "partieCnpjCpf": "92000012469",
+      "partiePersonType": "PESSOA_NATURAL"
+    },
+    {
+      "transactionId": "fee354d6419659cf9773f180ce71a79d",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DSCBLL INSUMOS 0518 T06",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1207.18",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-05-05T13:38:00.000Z",
+      "partieCnpjCpf": "98150238000106",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "26f700845c945064b71b165a8f2cb6e3",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA EMBPKSL PECA 1961 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "79.70",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-13T19:11:00.000Z",
+      "partieCnpjCpf": "98150901000164",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "dbef3b11a85852ec89ff30948921f5f5",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC ESPCLE PGTOOS 0296 T09",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "2072.24",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-29T19:56:00.000Z",
+      "partieCnpjCpf": "98150136000182",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "e8fddb7adaed5a8d8b45dfee61e19772",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "CREDITO",
+      "transactionName": "PIXREC OBRNEXO PGTOOS 0222 T07",
+      "type": "PIX",
+      "transactionAmount": {
+        "amount": "1649.18",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-04-27T15:42:00.000Z",
+      "partieCnpjCpf": "98150102000198",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "437dce2f2fea59e88fe22ff835e5912f",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ESTCSL ESTAC 1924 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "48.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-12T17:04:00.000Z",
+      "partieCnpjCpf": "98150884000165",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "57c11096754b5f11a226c2797ff4d9ff",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY PCGAMER 4662 T01",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "661.40",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-25T12:42:00.000Z",
+      "partieCnpjCpf": "98152142000179",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "28a55f387f125e77b1f910ee177f3b4c",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA TCHPLY GAME 3959 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "3749.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-08-06T19:29:00.000Z",
+      "partieCnpjCpf": "98151819000154",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "e68dfedb92935a9c844be8cd6eaedfb1",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA DSCBLL PECA 2294 T09",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "79.70",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-23T01:14:00.000Z",
+      "partieCnpjCpf": "98151054000152",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "3e918441d1c25fd1ba09c3a59cdef723",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ELTLAR CASAPROPRI 3478 T05",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "1036.60",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-24T20:58:00.000Z",
+      "partieCnpjCpf": "98151598000114",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "9847220a9985502599b4faafcbef5a2a",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA ACDMOV ACADEMIA 2738 T03",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "326.02",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-04T16:38:00.000Z",
+      "partieCnpjCpf": "98151258000193",
+      "partiePersonType": "PESSOA_JURIDICA"
+    },
+    {
+      "transactionId": "8e2f5dbf4e265a449709375b901efc36",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "SAQUE SAQATM SAQUE 2331 T01",
+      "type": "SAQUE",
+      "transactionAmount": {
+        "amount": "250.00",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-06-23T12:21:00.000Z"
+    },
+    {
+      "transactionId": "24d096b7fb225b25bf94fcc6e50e5822",
+      "completedAuthorisedPaymentType": "TRANSACAO_EFETIVADA",
+      "creditDebitType": "DEBITO",
+      "transactionName": "CARTA MDPLAY PLANO 3256 T08",
+      "type": "CARTAO",
+      "transactionAmount": {
+        "amount": "39.90",
+        "currency": "BRL"
+      },
+      "transactionDateTime": "2026-07-18T17:16:00.000Z",
+      "partieCnpjCpf": "98151496000107",
+      "partiePersonType": "PESSOA_JURIDICA"
+    }
+  ]
+}
