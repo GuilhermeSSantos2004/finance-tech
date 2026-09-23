@@ -1,0 +1,1839 @@
+{
+  "benchmarkMetadata": {
+    "name": "finance_tech_blind_benchmark_140_gold",
+    "version": "1.0.0",
+    "recordCount": 140,
+    "classCounts": {
+      "BUSINESS": 70,
+      "PERSONAL": 70
+    },
+    "difficultyCountsPerClass": {
+      "EASY": 15,
+      "MEDIUM": 20,
+      "HARD": 20,
+      "ADVERSARIAL": 15
+    },
+    "warning": "Never pass this file to the model. It is the scoring key."
+  },
+  "answers": [
+    {
+      "id": "fa106be7-4a07-51e0-85f7-17ff68f46541",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CASH_PETTY",
+      "reasonCode": "CASH_PETTY",
+      "humanRationale": "Saque destinado a caixa pequeno operacional do negócio.",
+      "trap": "Saque normalmente é ambíguo e não identifica a destinação no extrato.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "b9631685-c082-52d7-b053-07d056db4924",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "HOME_UTILITY",
+      "reasonCode": "HOME_UTILITY",
+      "humanRationale": "Conta residencial do titular paga pela conta do MEI.",
+      "trap": "Despesa recorrente de utilidade pode existir tanto no negócio quanto em casa.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "0b749007-4e3d-59e3-ac2a-b319ceb6220b",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_SUBSCRIPTION",
+      "reasonCode": "PERSONAL_SUBSCRIPTION",
+      "humanRationale": "Assinatura de entretenimento/uso pessoal.",
+      "trap": "Assinaturas mensais também podem ser SaaS empresarial.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "5a36602e-a0af-54a3-94cd-3384ee389336",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKEND_SMALL_TOOL",
+      "reasonCode": "WEEKEND_SMALL_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "69dcd005-15e8-510d-a6ae-892d0470f91d",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "98e4a24b-39d7-590e-9303-9a72af56d685",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKDAY_DOMAIN_PERSONAL",
+      "reasonCode": "WEEKDAY_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "aeb75701-be0c-5eb1-a8ce-bf80da50c41e",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_INCOME",
+      "reasonCode": "MISLEADING_INCOME",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "85a78c28-f08d-5cfa-a2b5-289fe81215a4",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CPF_BUSINESS_SERVICE",
+      "reasonCode": "CPF_BUSINESS_SERVICE",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "50e2878d-9c6e-5a1c-a1d3-8d4f6fc11ebc",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "54331bc4-7abc-5815-8339-469ab2e4e0f7",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FUEL_WORK",
+      "reasonCode": "FUEL_WORK",
+      "humanRationale": "Combustível usado em deslocamento operacional recorrente.",
+      "trap": "Combustível pode ser pessoal ou comercial; o caso usa padrão recorrente em horário de trabalho.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "82018672-515a-5c4d-86ab-2668281d4f8e",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "TELECOM_WORK",
+      "reasonCode": "TELECOM_WORK",
+      "humanRationale": "Plano de conectividade recorrente usado na operação.",
+      "trap": "Telecom também existe na vida pessoal; recorrência e descrição curta são as principais pistas.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "4c6b13c4-cc65-5cbe-a36d-1d337f0a9ff1",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_REFUND",
+      "reasonCode": "PERSONAL_REFUND",
+      "humanRationale": "Estorno de compra pessoal paga indevidamente pela conta do MEI.",
+      "trap": "Crédito vindo de CNPJ pode parecer receita ou reembolso empresarial.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "7cf5da35-183b-5a59-be32-691d8063387a",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "MARKETPLACE_INCOME",
+      "reasonCode": "MARKETPLACE_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "51a901c7-59d5-500f-8938-7bd61c481fcf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "ef800945-caae-55b7-ab3e-ba6ba8da196a",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKEND_SMALL_TOOL",
+      "reasonCode": "WEEKEND_SMALL_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "81435bbd-5fb7-596d-8726-f2b1353669a8",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PERSON_SUBCONTRACTOR",
+      "reasonCode": "PERSON_SUBCONTRACTOR",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "ac00af99-9f01-5e6f-8a8f-560fe252ae37",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "0d5136bb-00dc-5f69-ac90-e67bd81022a7",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "SUPPLIER_REFUND",
+      "reasonCode": "SUPPLIER_REFUND",
+      "humanRationale": "Reembolso/estorno de fornecedor referente a despesa da empresa.",
+      "trap": "Crédito pequeno pode ser confundido com transferência pessoal ou renda.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "70c62246-d133-5f0f-bf8c-833c2a9d37b5",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_REFUND",
+      "reasonCode": "PERSONAL_REFUND",
+      "humanRationale": "Estorno de compra pessoal paga indevidamente pela conta do MEI.",
+      "trap": "Crédito vindo de CNPJ pode parecer receita ou reembolso empresarial.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "0a8392e6-c58e-5332-b862-6763776cc7cf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "32172127-d930-5175-9a9b-d79fa2e140ef",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FUEL_WORK",
+      "reasonCode": "FUEL_WORK",
+      "humanRationale": "Combustível usado em deslocamento operacional recorrente.",
+      "trap": "Combustível pode ser pessoal ou comercial; o caso usa padrão recorrente em horário de trabalho.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "dcb63183-5374-5fc4-a254-e4676a2e4a78",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "ec7bbf13-2caf-5fcc-9f1e-1fb839548594",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "TELECOM_WORK",
+      "reasonCode": "TELECOM_WORK",
+      "humanRationale": "Plano de conectividade recorrente usado na operação.",
+      "trap": "Telecom também existe na vida pessoal; recorrência e descrição curta são as principais pistas.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "24b886f5-d785-5083-abfa-4e95e6a74bfc",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PERSON_SUBCONTRACTOR",
+      "reasonCode": "PERSON_SUBCONTRACTOR",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "11cae607-e615-546b-8bac-2d217cf50c98",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "b8bdacd1-44df-531d-9dc7-5b8dd1d9e5f1",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "136ec1e9-658c-57ab-a474-583cffa45077",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_CATEGORY",
+      "reasonCode": "MISLEADING_CATEGORY",
+      "humanRationale": "Pagamento de fornecedor operacional apesar de categoria bancária incorreta/ruidosa.",
+      "trap": "Categoria propositalmente errada testa dependência excessiva do enriquecimento bancário.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "ac7b0fc6-e8bc-5377-9442-26d662f2ac1d",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "e8b3ef7b-9ed9-5b7f-9c6b-d607661eca08",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "520f80fa-7985-524d-bfba-a18242ddd128",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "3797aea3-2cc7-51e3-bd9d-70ad789e8baf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "PERSONAL_CAR_EXPENSE",
+      "reasonCode": "PERSONAL_CAR_EXPENSE",
+      "humanRationale": "Manutenção de veículo particular do titular.",
+      "trap": "Transporte pode ser custo de trabalho, mas neste caso o extrato traz indício de uso particular.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "0bbe03db-47e6-5297-9eec-253edacad727",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "GENERIC_SUPPLIER",
+      "reasonCode": "GENERIC_SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "1e0eab62-f4ae-51b3-a8fa-ad16c8877431",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PERSON_SUBCONTRACTOR",
+      "reasonCode": "PERSON_SUBCONTRACTOR",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "9f76ccc2-da84-56be-8f73-1fc7bd245a13",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CPF_BUSINESS_SERVICE",
+      "reasonCode": "CPF_BUSINESS_SERVICE",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "62d5b062-1760-58d8-9ef2-78a72eb57a3a",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FREELANCER",
+      "reasonCode": "FREELANCER",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "f116ceaf-672f-523c-9095-1bea0a0ce542",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_TRANSFER",
+      "reasonCode": "PERSONAL_TRANSFER",
+      "humanRationale": "Transferência pessoal para familiar/conhecido.",
+      "trap": "PIX para CPF também pode ser pagamento de prestador; o texto é deliberadamente curto.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "cf743b34-c6c1-5db0-938c-595becb8bf5c",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "5bd257f7-a278-547a-bad9-5c28364daa72",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "SUPPLIER_REFUND",
+      "reasonCode": "SUPPLIER_REFUND",
+      "humanRationale": "Reembolso/estorno de fornecedor referente a despesa da empresa.",
+      "trap": "Crédito pequeno pode ser confundido com transferência pessoal ou renda.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "decc3323-62a0-5c52-82a1-98e9f7c22438",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "b5277f41-6b7a-5cf9-968b-189168afe953",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "HIGH_VALUE_PERSONAL_CREDIT",
+      "reasonCode": "HIGH_VALUE_PERSONAL_CREDIT",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "9501a635-b304-58d7-98d5-bbfdf2d588a4",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "a4c4432e-0e06-56dd-b95e-a9cd74ffc0a4",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "HOME_UTILITY",
+      "reasonCode": "HOME_UTILITY",
+      "humanRationale": "Conta residencial do titular paga pela conta do MEI.",
+      "trap": "Despesa recorrente de utilidade pode existir tanto no negócio quanto em casa.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "641c2adc-7d40-5e9d-a713-555e8638ec5f",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PERSON_SUBCONTRACTOR",
+      "reasonCode": "PERSON_SUBCONTRACTOR",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "5fc4c5e8-fec0-5537-a3bf-93bffb93bbc7",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "reasonCode": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "1bad1641-78cc-5bfa-b458-56afcb1a94a1",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "LARGE_FAMILY_CREDIT",
+      "reasonCode": "LARGE_FAMILY_CREDIT",
+      "humanRationale": "Reembolso/transferência familiar de alto valor, sem relação com faturamento.",
+      "trap": "Crédito alto costuma parecer receita comercial.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "190a8834-14e7-5534-92b9-a4f9ed47872e",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_TRANSFER",
+      "reasonCode": "PERSONAL_TRANSFER",
+      "humanRationale": "Transferência pessoal para familiar/conhecido.",
+      "trap": "PIX para CPF também pode ser pagamento de prestador; o texto é deliberadamente curto.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "2a4ae340-6bc4-50e2-9299-f90dc06b53c6",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FREELANCER",
+      "reasonCode": "FREELANCER",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "ffbaef92-403e-55ef-857a-58533df69598",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "TELECOM_WORK",
+      "reasonCode": "TELECOM_WORK",
+      "humanRationale": "Plano de conectividade recorrente usado na operação.",
+      "trap": "Telecom também existe na vida pessoal; recorrência e descrição curta são as principais pistas.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "d83242ec-e5dd-5d55-bf25-4e01e8a6ae10",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "FAMILY_WHOLESALE",
+      "reasonCode": "FAMILY_WHOLESALE",
+      "humanRationale": "Compra de atacado para consumo familiar, não para o negócio.",
+      "trap": "Atacado e valor alto podem parecer compra de estoque.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "954fe3f1-2e3e-50d2-825f-e3f370d96d41",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_CATEGORY",
+      "reasonCode": "MISLEADING_CATEGORY",
+      "humanRationale": "Pagamento de fornecedor operacional apesar de categoria bancária incorreta/ruidosa.",
+      "trap": "Categoria propositalmente errada testa dependência excessiva do enriquecimento bancário.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "656989a0-02a7-5e65-9e8d-e41b70ca7619",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_SUBSCRIPTION",
+      "reasonCode": "PERSONAL_SUBSCRIPTION",
+      "humanRationale": "Assinatura de entretenimento/uso pessoal.",
+      "trap": "Assinaturas mensais também podem ser SaaS empresarial.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "b0765b61-d8ab-5dbd-bd0b-8c73b32a7f14",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKDAY_DOMAIN_PERSONAL",
+      "reasonCode": "WEEKDAY_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "3308fb69-21e5-5cb2-8735-83a9d3ec020d",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "1febef99-8eeb-5800-af88-bcf5a3ae2062",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "PERSONAL_CAR_EXPENSE",
+      "reasonCode": "PERSONAL_CAR_EXPENSE",
+      "humanRationale": "Manutenção de veículo particular do titular.",
+      "trap": "Transporte pode ser custo de trabalho, mas neste caso o extrato traz indício de uso particular.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "b4a359d2-6703-58eb-a530-999b2e476f72",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "PERSONAL_CAR_EXPENSE",
+      "reasonCode": "PERSONAL_CAR_EXPENSE",
+      "humanRationale": "Manutenção de veículo particular do titular.",
+      "trap": "Transporte pode ser custo de trabalho, mas neste caso o extrato traz indício de uso particular.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "b17f165a-5cc9-5331-bb70-c6c85020cdfd",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "SUPPLIER_REFUND",
+      "reasonCode": "SUPPLIER_REFUND",
+      "humanRationale": "Reembolso/estorno de fornecedor referente a despesa da empresa.",
+      "trap": "Crédito pequeno pode ser confundido com transferência pessoal ou renda.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "644c1b0c-331a-55ca-9e4f-932f02a81ba5",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "cc931b21-01df-596a-a360-5a423402bf3a",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "LOW_VALUE_TOOL",
+      "reasonCode": "LOW_VALUE_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "a29026b3-2c4b-51c4-a435-7c7ec67c22af",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_TRANSFER",
+      "reasonCode": "PERSONAL_TRANSFER",
+      "humanRationale": "Transferência pessoal para familiar/conhecido.",
+      "trap": "PIX para CPF também pode ser pagamento de prestador; o texto é deliberadamente curto.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "13361aeb-694a-5e73-87cb-b05ae0790783",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "ECOM_SUPPLIES",
+      "reasonCode": "ECOM_SUPPLIES",
+      "humanRationale": "Compra de material operacional via marketplace genérico.",
+      "trap": "O estabelecimento não revela o produto; a atividade e o padrão histórico precisam ajudar.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "beae83e5-eb6f-529f-96ea-2e43f88c3afb",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "ECOM_SUPPLIES",
+      "reasonCode": "ECOM_SUPPLIES",
+      "humanRationale": "Compra de material operacional via marketplace genérico.",
+      "trap": "O estabelecimento não revela o produto; a atividade e o padrão histórico precisam ajudar.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "916a605c-f247-5412-bc7e-e5bbfdf37304",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "60d836e0-522c-503d-b803-e2bd72fc54f3",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "FAMILY_WHOLESALE",
+      "reasonCode": "FAMILY_WHOLESALE",
+      "humanRationale": "Compra de atacado para consumo familiar, não para o negócio.",
+      "trap": "Atacado e valor alto podem parecer compra de estoque.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "fafdadc5-1d4c-55a4-93de-eaceef1edf06",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PARKING_WORK",
+      "reasonCode": "PARKING_WORK",
+      "humanRationale": "Estacionamento recorrente em deslocamentos de atendimento/fornecimento.",
+      "trap": "Valor pequeno e categoria transporte tendem a parecer despesa pessoal.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "97f61fa4-e018-5b8f-a521-8c760e0acb03",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "HIGH_VALUE_PERSONAL_CREDIT",
+      "reasonCode": "HIGH_VALUE_PERSONAL_CREDIT",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "d3340305-12cd-5fa7-a371-b61bdd100e8b",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "ECOM_SUPPLIES",
+      "reasonCode": "ECOM_SUPPLIES",
+      "humanRationale": "Compra de material operacional via marketplace genérico.",
+      "trap": "O estabelecimento não revela o produto; a atividade e o padrão histórico precisam ajudar.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "e29040f7-3661-5dc0-8f99-bc5db88aa4e6",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "HOME_UTILITY",
+      "reasonCode": "HOME_UTILITY",
+      "humanRationale": "Conta residencial do titular paga pela conta do MEI.",
+      "trap": "Despesa recorrente de utilidade pode existir tanto no negócio quanto em casa.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "b8dc1725-5df0-52b4-95b0-8eb07a257fce",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CPF_BUSINESS_SERVICE",
+      "reasonCode": "CPF_BUSINESS_SERVICE",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "d5849fd4-b04e-5e85-80c4-a4a6078e8571",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CASH_PETTY",
+      "reasonCode": "CASH_PETTY",
+      "humanRationale": "Saque destinado a caixa pequeno operacional do negócio.",
+      "trap": "Saque normalmente é ambíguo e não identifica a destinação no extrato.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "77beae16-57db-51a4-a67d-982b9b8294bc",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "HIGH_VALUE_PERSONAL_CREDIT",
+      "reasonCode": "HIGH_VALUE_PERSONAL_CREDIT",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "c5974a57-d94b-5dea-b928-40739bb27a92",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "6a1a14b8-807a-52ae-8a87-4f88fe5a2a5f",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_REFUND",
+      "reasonCode": "PERSONAL_REFUND",
+      "humanRationale": "Estorno de compra pessoal paga indevidamente pela conta do MEI.",
+      "trap": "Crédito vindo de CNPJ pode parecer receita ou reembolso empresarial.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "04566bbd-78d6-574f-ba40-d6dc61829f51",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FUEL_WORK",
+      "reasonCode": "FUEL_WORK",
+      "humanRationale": "Combustível usado em deslocamento operacional recorrente.",
+      "trap": "Combustível pode ser pessoal ou comercial; o caso usa padrão recorrente em horário de trabalho.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "32a31e37-baf4-5825-a3f5-6587f91d3d89",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "ECOM_SUPPLIES",
+      "reasonCode": "ECOM_SUPPLIES",
+      "humanRationale": "Compra de material operacional via marketplace genérico.",
+      "trap": "O estabelecimento não revela o produto; a atividade e o padrão histórico precisam ajudar.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "eaa64d22-6338-59dc-9c0c-3ff8636a561f",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FUEL_WORK",
+      "reasonCode": "FUEL_WORK",
+      "humanRationale": "Combustível usado em deslocamento operacional recorrente.",
+      "trap": "Combustível pode ser pessoal ou comercial; o caso usa padrão recorrente em horário de trabalho.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "a43dd8c2-7684-5487-8bf2-aaa9235ae7c4",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FREELANCER",
+      "reasonCode": "FREELANCER",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "7f791599-c328-5047-82a3-3edc7c6b843e",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "47191947-d610-55c1-9b58-03f91657876b",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "TELECOM_WORK",
+      "reasonCode": "TELECOM_WORK",
+      "humanRationale": "Plano de conectividade recorrente usado na operação.",
+      "trap": "Telecom também existe na vida pessoal; recorrência e descrição curta são as principais pistas.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "a2e47fd0-b52d-546d-85be-d821d2156acb",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "115a3026-c6d3-54a5-9c76-052e503fa6c7",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKDAY_DOMAIN_PERSONAL",
+      "reasonCode": "WEEKDAY_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "8862051e-b523-51b2-baa1-4c8a1698eeb4",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "7ebc5648-67ca-525d-8fa7-32a9d0e66e41",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_REFUND",
+      "reasonCode": "PERSONAL_REFUND",
+      "humanRationale": "Estorno de compra pessoal paga indevidamente pela conta do MEI.",
+      "trap": "Crédito vindo de CNPJ pode parecer receita ou reembolso empresarial.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "caa17684-f725-5967-998f-0beafb99e686",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "HOME_UTILITY",
+      "reasonCode": "HOME_UTILITY",
+      "humanRationale": "Conta residencial do titular paga pela conta do MEI.",
+      "trap": "Despesa recorrente de utilidade pode existir tanto no negócio quanto em casa.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "81d3bf7a-36e8-5599-93df-921a6c6855d2",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "LARGE_FAMILY_CREDIT",
+      "reasonCode": "LARGE_FAMILY_CREDIT",
+      "humanRationale": "Reembolso/transferência familiar de alto valor, sem relação com faturamento.",
+      "trap": "Crédito alto costuma parecer receita comercial.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "5399fbd3-5052-5ee1-a809-aa395509fe12",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "c758a78a-ea7b-5135-b037-c74b390881ae",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "LATE_SUPPLIER",
+      "reasonCode": "LATE_SUPPLIER",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "592cc6ad-22da-52cc-9e07-e05d2b2d51c7",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_INCOME",
+      "reasonCode": "MISLEADING_INCOME",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "445d5d0c-ab9a-5629-b230-6f1003ad4d9b",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "FREELANCER",
+      "reasonCode": "FREELANCER",
+      "humanRationale": "Pagamento a prestador pessoa física/subcontratado ligado à operação.",
+      "trap": "CPF e PIX para pessoa física parecem transferência pessoal, mas aqui são custo operacional.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "dede5acb-fb6b-57a9-9389-286454c64d5e",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_TRANSFER",
+      "reasonCode": "PERSONAL_TRANSFER",
+      "humanRationale": "Transferência pessoal para familiar/conhecido.",
+      "trap": "PIX para CPF também pode ser pagamento de prestador; o texto é deliberadamente curto.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "fa7e80b9-4db1-557e-a65d-05ac505a092d",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "MARKETPLACE_INCOME",
+      "reasonCode": "MARKETPLACE_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "2549ca42-7f03-5f32-b780-e816ed326eaa",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "GENERIC_SUPPLIER",
+      "reasonCode": "GENERIC_SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "fb7e4ddd-6ded-5d4a-94eb-deeae1b29509",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_ELECTRONICS",
+      "reasonCode": "PERSONAL_ELECTRONICS",
+      "humanRationale": "Eletrônico adquirido para lazer/uso pessoal.",
+      "trap": "Especialmente difícil no CNAE de TI, onde hardware também poderia ser ferramenta de trabalho.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "a1e02648-24bb-5856-8a29-65dd1a23703a",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_ELECTRONICS",
+      "reasonCode": "PERSONAL_ELECTRONICS",
+      "humanRationale": "Eletrônico adquirido para lazer/uso pessoal.",
+      "trap": "Especialmente difícil no CNAE de TI, onde hardware também poderia ser ferramenta de trabalho.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "51b7259f-aff4-5648-bc5d-a5b815854e67",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "WEEKEND_SMALL_TOOL",
+      "reasonCode": "WEEKEND_SMALL_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "84d9c067-5636-5fba-baee-e3b456b2462a",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_CATEGORY",
+      "reasonCode": "MISLEADING_CATEGORY",
+      "humanRationale": "Pagamento de fornecedor operacional apesar de categoria bancária incorreta/ruidosa.",
+      "trap": "Categoria propositalmente errada testa dependência excessiva do enriquecimento bancário.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "d1b2bd0e-756d-5038-bc18-e868f5b07d07",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "LOW_VALUE_TOOL",
+      "reasonCode": "LOW_VALUE_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "79bcfd1f-4a29-5142-ab64-0e9cff5e7739",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "7635d2e1-71fa-5a83-9cff-761323882969",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "MARKETPLACE_INCOME",
+      "reasonCode": "MARKETPLACE_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "1d196f2d-c5bd-5f5f-89ac-ab7ba845dbb9",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "reasonCode": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "146119ce-f5e5-5fb5-9651-25d79046f2b7",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "GENERIC_SUPPLIER",
+      "reasonCode": "GENERIC_SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "39813122-8c2a-5962-9ad9-567b3a55547d",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "c694fd63-f83a-5a6a-ab92-f59902ea5c25",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "MISLEADING_INCOME",
+      "reasonCode": "MISLEADING_INCOME",
+      "humanRationale": "Entrada pessoal extraordinária (ex.: venda de bem próprio/transferência particular), não faturamento.",
+      "trap": "Todos os sinais superficiais de valor e direção apontam para receita comercial.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "1bba427c-c093-57bb-8e3c-1c2c6a79851f",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "46ae2425-1181-5a7b-980f-80bde7f3ecaf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "LARGE_FAMILY_CREDIT",
+      "reasonCode": "LARGE_FAMILY_CREDIT",
+      "humanRationale": "Reembolso/transferência familiar de alto valor, sem relação com faturamento.",
+      "trap": "Crédito alto costuma parecer receita comercial.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "495f32dc-a048-5203-9fca-b94c39709b21",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "LATE_SUPPLIER",
+      "reasonCode": "LATE_SUPPLIER",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "fa538eed-b483-583c-9065-79ab0317021f",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "SUPPLIER_REFUND",
+      "reasonCode": "SUPPLIER_REFUND",
+      "humanRationale": "Reembolso/estorno de fornecedor referente a despesa da empresa.",
+      "trap": "Crédito pequeno pode ser confundido com transferência pessoal ou renda.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "b38de36f-4918-5eb6-aa87-5468ee6dbeaf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "6022012d-0e23-5053-b3b1-8ba47229d2a1",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "b6027a7a-5a46-5c2d-9c58-12cf29aa804b",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "LARGE_FAMILY_CREDIT",
+      "reasonCode": "LARGE_FAMILY_CREDIT",
+      "humanRationale": "Reembolso/transferência familiar de alto valor, sem relação com faturamento.",
+      "trap": "Crédito alto costuma parecer receita comercial.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "a9d741b8-a87b-5e90-b43f-8b0ee65cb64f",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "GENERIC_SUPPLIER",
+      "reasonCode": "GENERIC_SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "940925cd-c89a-5a93-a968-eb3948017273",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_SUBSCRIPTION",
+      "reasonCode": "PERSONAL_SUBSCRIPTION",
+      "humanRationale": "Assinatura de entretenimento/uso pessoal.",
+      "trap": "Assinaturas mensais também podem ser SaaS empresarial.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "234f1d6f-b151-5dc3-a104-60c6eea66e64",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "5e30e42d-cbf3-5095-b5dd-3db03c767dcd",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "LOW_VALUE_TOOL",
+      "reasonCode": "LOW_VALUE_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "1f029333-855d-5c1a-9831-52500ac191b9",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PARKING_WORK",
+      "reasonCode": "PARKING_WORK",
+      "humanRationale": "Estacionamento recorrente em deslocamentos de atendimento/fornecimento.",
+      "trap": "Valor pequeno e categoria transporte tendem a parecer despesa pessoal.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "48c609e2-5d11-583a-a23f-0824a6089606",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "3a414180-5f98-5b8f-bb70-a6c58f225f20",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "0de2a542-df88-5513-a6b4-7ab0d23dc8bf",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "FAMILY_WHOLESALE",
+      "reasonCode": "FAMILY_WHOLESALE",
+      "humanRationale": "Compra de atacado para consumo familiar, não para o negócio.",
+      "trap": "Atacado e valor alto podem parecer compra de estoque.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "0c656480-0c8d-51a8-b727-f6a60d1bb00b",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "45c44f1c-80ef-5116-af85-b7025c8479d3",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "MEDIUM",
+      "scenario": "MARKETPLACE_INCOME",
+      "reasonCode": "MARKETPLACE_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "2883ead9-2060-525c-9717-dbd861ad4426",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_ELECTRONICS",
+      "reasonCode": "PERSONAL_ELECTRONICS",
+      "humanRationale": "Eletrônico adquirido para lazer/uso pessoal.",
+      "trap": "Especialmente difícil no CNAE de TI, onde hardware também poderia ser ferramenta de trabalho.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "4306770f-666b-5f94-9f97-2b601b9cf14e",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PARKING_WORK",
+      "reasonCode": "PARKING_WORK",
+      "humanRationale": "Estacionamento recorrente em deslocamentos de atendimento/fornecimento.",
+      "trap": "Valor pequeno e categoria transporte tendem a parecer despesa pessoal.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "1a8ac01e-7861-5d9e-9823-50cc3c66a02a",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "9e53b3e7-0ee8-5eb8-b81e-7fe1f0433b0e",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "18dc5fc9-f24b-53ca-a070-fae4f39e13d7",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "fc3e95d0-f734-56a6-99dd-1ba17adb169d",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "FAMILY_WHOLESALE",
+      "reasonCode": "FAMILY_WHOLESALE",
+      "humanRationale": "Compra de atacado para consumo familiar, não para o negócio.",
+      "trap": "Atacado e valor alto podem parecer compra de estoque.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "3f04216a-5a95-5a57-ad9a-9b619731e560",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "fd4a0dc9-87b0-570b-8c1b-fa85d7f119c9",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "723a9462-12ec-5b5f-bd8c-51e595a12364",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "OWNER_DRAW",
+      "reasonCode": "OWNER_DRAW",
+      "humanRationale": "Retirada do titular/transferência para uso pessoal, não custo da atividade.",
+      "trap": "Recorrência mensal e valor redondo podem parecer folha ou fornecedor.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "fee354d6-4196-59cf-9773-f180ce71a79d",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "SUPPLIER",
+      "reasonCode": "SUPPLIER",
+      "humanRationale": "Compra de insumo/estoque compatível com a atividade do MEI.",
+      "trap": "Descrição bancária curta e nome de fornecedor totalmente novo.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "26f70084-5c94-5064-b71b-165a8f2cb6e3",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "LOW_VALUE_TOOL",
+      "reasonCode": "LOW_VALUE_TOOL",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "dbef3b11-a858-52ec-89ff-30948921f5f5",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "e8fddb7a-daed-5a8d-8b45-dfee61e19772",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "EASY",
+      "scenario": "CLIENT_INCOME",
+      "reasonCode": "CLIENT_INCOME",
+      "humanRationale": "Recebimento por serviço/venda da atividade empresarial.",
+      "trap": "Em receitas, crédito alto não deve ser a única pista; o pagador e a recorrência importam.",
+      "businessContext": {
+        "mainCnae": "4330-4/04",
+        "businessActivity": "Servicos de pintura de edificios em geral"
+      }
+    },
+    {
+      "id": "437dce2f-2fea-59e8-8fe2-2ff835e5912f",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "HARD",
+      "scenario": "PARKING_WORK",
+      "reasonCode": "PARKING_WORK",
+      "humanRationale": "Estacionamento recorrente em deslocamentos de atendimento/fornecimento.",
+      "trap": "Valor pequeno e categoria transporte tendem a parecer despesa pessoal.",
+      "businessContext": {
+        "mainCnae": "4781-4/00",
+        "businessActivity": "Comercio varejista de artigos do vestuario e acessorios"
+      }
+    },
+    {
+      "id": "57c11096-754b-5f11-a226-c2797ff4d9ff",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "reasonCode": "CNPJ_OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "28a55f38-7f12-5e77-b1f9-10ee177f3b4c",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "HARD",
+      "scenario": "PERSONAL_ELECTRONICS",
+      "reasonCode": "PERSONAL_ELECTRONICS",
+      "humanRationale": "Eletrônico adquirido para lazer/uso pessoal.",
+      "trap": "Especialmente difícil no CNAE de TI, onde hardware também poderia ser ferramenta de trabalho.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "e68dfedb-9293-5a9c-844b-e8cd6eaedfb1",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "LATE_SUPPLIER",
+      "reasonCode": "LATE_SUPPLIER",
+      "humanRationale": "Pequeno item consumível/ferramenta comprado para o serviço.",
+      "trap": "Pequeno valor e horário atípico contradizem heurísticas simples.",
+      "businessContext": {
+        "mainCnae": "9602-5/01",
+        "businessActivity": "Cabeleireiros, manicure e pedicure"
+      }
+    },
+    {
+      "id": "3e918441-d1c2-5fd1-ba09-c3a59cdef723",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "OWN_DOMAIN_PERSONAL",
+      "reasonCode": "OWN_DOMAIN_PERSONAL",
+      "humanRationale": "Compra no mesmo domínio do CNAE, mas destinada à residência/uso próprio/presente.",
+      "trap": "É o principal contraexemplo: estabelecimento e CNAE combinam, mas a finalidade é pessoal e aparece apenas em sinais sutis do histórico/descrição.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    },
+    {
+      "id": "9847220a-9985-5025-99b4-faafcbef5a2a",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "EASY",
+      "scenario": "COMMON_PERSONAL",
+      "reasonCode": "COMMON_PERSONAL",
+      "humanRationale": "Consumo pessoal sem relação operacional com o CNAE.",
+      "trap": "Caso de controle com sinais pessoais relativamente claros.",
+      "businessContext": {
+        "mainCnae": "5611-2/03",
+        "businessActivity": "Lanchonetes, casas de cha, de sucos e similares"
+      }
+    },
+    {
+      "id": "8e2f5dbf-4e26-5a44-9709-375b901efc36",
+      "expectedClassification": "BUSINESS",
+      "difficulty": "ADVERSARIAL",
+      "scenario": "CASH_PETTY",
+      "reasonCode": "CASH_PETTY",
+      "humanRationale": "Saque destinado a caixa pequeno operacional do negócio.",
+      "trap": "Saque normalmente é ambíguo e não identifica a destinação no extrato.",
+      "businessContext": {
+        "mainCnae": "6209-1/00",
+        "businessActivity": "Suporte tecnico, manutencao e outros servicos em tecnologia da informacao"
+      }
+    },
+    {
+      "id": "24d096b7-fb22-5b25-bf94-fcc6e50e5822",
+      "expectedClassification": "PERSONAL",
+      "difficulty": "MEDIUM",
+      "scenario": "PERSONAL_SUBSCRIPTION",
+      "reasonCode": "PERSONAL_SUBSCRIPTION",
+      "humanRationale": "Assinatura de entretenimento/uso pessoal.",
+      "trap": "Assinaturas mensais também podem ser SaaS empresarial.",
+      "businessContext": {
+        "mainCnae": "4321-5/00",
+        "businessActivity": "Instalacao e manutencao eletrica"
+      }
+    }
+  ]
+}
