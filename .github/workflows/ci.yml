@@ -28,7 +28,5 @@ jobs:
       - name: Train smoke test
         run: >-
           python -m finance_classifier train
-          --business data/synthetic/transacoes_comerciais_30.json
-          --personal data/synthetic/transacoes_pessoais_30.json
           --output artifacts
 
