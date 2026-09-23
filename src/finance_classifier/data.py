@@ -9,6 +9,7 @@ from typing import Any, Iterable, Mapping
 
 
 SUPPORTED_LABELS = frozenset({"BUSINESS", "PERSONAL"})
+DEFAULT_TRAINING_DIR = Path("data/training")
 
 
 class DatasetValidationError(ValueError):
@@ -99,6 +100,26 @@ def load_transactions(
     if not records:
         raise DatasetValidationError("Nenhuma transacao encontrada")
     return records
+
+
+def discover_training_files(directory: str | Path = DEFAULT_TRAINING_DIR) -> list[Path]:
+    """Return all JSON training datasets in a directory, sorted by name."""
+    source = Path(directory)
+    if not source.exists():
+        raise DatasetValidationError(f"Pasta de treino nao encontrada: {source}")
+    if not source.is_dir():
+        raise DatasetValidationError(f"Caminho de treino nao e uma pasta: {source}")
+    paths = sorted(path for path in source.glob("*.json") if path.is_file())
+    if not paths:
+        raise DatasetValidationError(f"Nenhum arquivo .json encontrado em: {source}")
+    return paths
+
+
+def load_training_directory(
+    directory: str | Path = DEFAULT_TRAINING_DIR,
+) -> tuple[list[dict[str, Any]], list[str], list[str]]:
+    """Load every JSON dataset from the configured training directory."""
+    return load_training_data(discover_training_files(directory))
 
 
 def load_training_data(
