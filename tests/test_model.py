@@ -4,20 +4,19 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from finance_classifier.data import load_training_data
+from finance_classifier.data import load_training_directory
 from finance_classifier.model import TransactionClassifier
 from finance_classifier.training import train_and_save
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUSINESS = ROOT / "data/synthetic/transacoes_comerciais_30.json"
-PERSONAL = ROOT / "data/synthetic/transacoes_pessoais_30.json"
+TRAINING_DIR = ROOT / "data/training"
 
 
 class ModelTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.records, cls.labels, cls.groups = load_training_data([BUSINESS, PERSONAL])
+        cls.records, cls.labels, cls.groups = load_training_directory(TRAINING_DIR)
 
     def test_fit_predict_save_and_load(self) -> None:
         classifier = TransactionClassifier().fit(self.records, self.labels)
