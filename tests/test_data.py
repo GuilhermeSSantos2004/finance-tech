@@ -3,25 +3,31 @@ from __future__ import annotations
 import unittest
 from pathlib import Path
 
-from finance_classifier.data import load_training_data
+from finance_classifier.data import discover_training_files, load_training_directory
 from finance_classifier.training import group_split_indices
 
 
 ROOT = Path(__file__).resolve().parents[1]
-BUSINESS = ROOT / "data/synthetic/transacoes_comerciais_30.json"
-PERSONAL = ROOT / "data/synthetic/transacoes_pessoais_30.json"
+TRAINING_DIR = ROOT / "data/training"
 
 
 class DatasetTests(unittest.TestCase):
+    def test_training_directory_discovers_json_files(self) -> None:
+        files = discover_training_files(TRAINING_DIR)
+        self.assertEqual([path.name for path in files], [
+            "transacoes_comerciais_30.json",
+            "transacoes_pessoais_30.json",
+        ])
+
     def test_balanced_dataset_loads(self) -> None:
-        records, labels, groups = load_training_data([BUSINESS, PERSONAL])
+        records, labels, groups = load_training_directory(TRAINING_DIR)
         self.assertEqual(len(records), 60)
         self.assertEqual(labels.count("BUSINESS"), 30)
         self.assertEqual(labels.count("PERSONAL"), 30)
         self.assertEqual(len(set(groups)), 6)
 
     def test_group_split_has_no_account_leakage(self) -> None:
-        _, labels, groups = load_training_data([BUSINESS, PERSONAL])
+        _, labels, groups = load_training_directory(TRAINING_DIR)
         train, test = group_split_indices(labels, groups, test_size=0.25, random_state=42)
         train_groups = {groups[index] for index in train}
         test_groups = {groups[index] for index in test}
