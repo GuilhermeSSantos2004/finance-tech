@@ -36,6 +36,7 @@ artifacts/                  saída local dos treinamentos, ignorada pelo Git
 - [Como o algoritmo funciona](docs/ALGORITMO.md): arquitetura, features, modelo, limites e decisões técnicas.
 - [Contrato dos dados](docs/CONTRATO_DADOS.md): campos de treino e inferência, privacidade e prevenção de vazamento.
 - [Guia de testes](docs/TESTES.md): instalação, treinamento, inferência e interpretação das métricas.
+- [Blueprint do motor de inteligência financeira](docs/implementation/credit-intelligence/README.md): plano completo de evolução com CatBoost, semântica financeira, EWMA, MAD, CUSUM, Page-Hinkley, STL, Isolation Forest, HHI, DSCR, calibração, SHAP, drift, segurança e critérios de implementação/ablation.
 
 ## Preparação
 
